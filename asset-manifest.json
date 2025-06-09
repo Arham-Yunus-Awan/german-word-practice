@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Arham-Yunus-Awan/german-word-practice.git/static/css/main.835e69f4.css",
+    "main.js": "/Arham-Yunus-Awan/german-word-practice.git/static/js/main.77ae9ac0.js",
+    "index.html": "/Arham-Yunus-Awan/german-word-practice.git/index.html",
+    "main.835e69f4.css.map": "/Arham-Yunus-Awan/german-word-practice.git/static/css/main.835e69f4.css.map",
+    "main.77ae9ac0.js.map": "/Arham-Yunus-Awan/german-word-practice.git/static/js/main.77ae9ac0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.835e69f4.css",
+    "static/js/main.77ae9ac0.js"
+  ]
+}
