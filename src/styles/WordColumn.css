@@ -1,0 +1,118 @@
+/* styles/WordColumn.css */
+.words-column {
+  flex: 1; /* Allows columns to grow and fill space */
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem; /* Reduced space between words (previously 0.6rem) */
+  padding: 0.6rem; /* Reduced column padding (previously 0.8rem) */
+  border: 0.0625rem solid var(--card-border-color);
+  border-radius: 0.5rem;
+  background-color: #fcfcfc;
+  box-shadow: var(--box-shadow-light);
+}
+
+.words-column h2 {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 0.6rem; /* Reduced margin */
+  padding-bottom: 0.3rem; /* Reduced padding */
+  border-bottom: 0.0625rem dashed #eee;
+}
+
+.word {
+  padding: 0.5rem 0.7rem; /* Reduced word padding (previously 0.75rem 1rem) */
+  margin: 0;
+  border: 0.125rem solid var(--card-border-color);
+  border-radius: 0.4rem;
+  background-color: var(--card-bg-color);
+  cursor: pointer;
+  transition: all var(--transition-speed) ease-in-out, opacity var(--transition-speed) ease-out, transform var(--transition-speed) ease-out;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 2.2rem; /* Reduced min-height (previously 2.5rem) */
+  font-size: 0.9rem; /* Slightly smaller font for tighter fit */
+  font-weight: 500;
+  box-shadow: var(--box-shadow-light);
+  /* Ensure text doesn't break into new lines too easily unless necessary */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.word:hover:not(.selected):not(.disabled):not(.fading) {
+  background-color: #e8e8e8;
+  transform: translateY(-0.125rem);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.word.selected {
+  border-color: var(--selected-border-color);
+  background-color: var(--selected-bg-color);
+  box-shadow: var(--box-shadow-selected);
+  transform: scale(1.02);
+}
+
+.word.fading {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.word.disabled {
+  opacity: var(--disabled-opacity);
+  cursor: not-allowed;
+  border-color: var(--card-border-color) !important;
+  background-color: var(--card-bg-color) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.word.selected.disabled {
+  border-color: var(--selected-border-color);
+  background-color: var(--selected-bg-color);
+  opacity: var(--disabled-opacity);
+  box-shadow: var(--box-shadow-selected);
+}
+
+/* Specific responsiveness for columns */
+@media (max-width: 540px) { /* Match app's main breakpoint */
+  .words-column {
+    /* Flex-grow remains, no width: 95% or margin: 0 auto as columns are side-by-side */
+    padding: 0.5rem; /* Further reduced column padding */
+    gap: 0.3rem; /* Further reduced space between words */
+  }
+
+  .words-column h2 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .word {
+    padding: 0.4rem 0.6rem; /* Even smaller padding for words */
+    min-height: 2rem; /* Reduced min-height */
+    font-size: 0.85rem; /* Smaller font for words */
+  }
+}
+
+/* Even smaller screens (e.g., 320px width) */
+@media (max-width: 360px) {
+    .words-column {
+        padding: 0.3rem; /* Minimum padding for columns */
+        gap: 0.2rem; /* Minimum gap between words */
+    }
+    .words-column h2 {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+    .word {
+        padding: 0.3rem 0.5rem; /* Minimum padding for words */
+        min-height: 1.8rem; /* Absolute minimum height */
+        font-size: 0.8rem; /* Smallest font size */
+        border-width: 0.0625rem; /* Thinner border for very small words */
+    }
+}

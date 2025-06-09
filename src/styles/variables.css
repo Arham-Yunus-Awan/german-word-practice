@@ -1,0 +1,12 @@
+:root {
+  --primary-blue: #0d47a1;
+  --light-blue: #e3f2fd;
+  --primary-orange: #e65100;
+  --light-orange: #fff8e1;
+  --border-blue: #64b5f6;
+  --border-orange: #ffb74d;
+  --success: #4CAF50;
+  --danger: #f44336;
+  --shadow: 0 4px 8px rgba(0,0,0,0.1);
+  --transition: all 0.3s ease;
+}

@@ -1,0 +1,38 @@
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.timer-display {
+  font-family: 'Courier New', monospace;
+  font-size: 1.4rem;
+  background-color: #f8f9fa;
+  padding: 5px 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timer-display.active {
+  background-color: #e9f5ff;
+}
+
+.timer-pulse {
+  color: #4CAF50;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.best-time {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 4px;
+}
