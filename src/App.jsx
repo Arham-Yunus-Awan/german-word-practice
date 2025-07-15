@@ -8,13 +8,11 @@ import './styles/FeedbackMessage.css';
 import './styles/WordColumn.css';
 
 function App() {
-  // Three possible states: 'landing', 'timeAttack', 'clearTheBoard'
   const [gameState, setGameState] = useState('landing');
-
   const [sessionScore, setSessionScore] = useState(0);
 
   const handleStartGame = (mode) => {
-    setSessionScore(0); // Reset score when starting a new game
+    setSessionScore(0);
     if (mode === 'timeAttack' || mode === 'clearTheBoard') {
       setGameState(mode);
     }
@@ -22,7 +20,6 @@ function App() {
 
   const handleGoHome = () => {
     setGameState('landing');
-    setSessionScore(0); 
   };
 
   const handleIncrementScore = () => {
@@ -33,18 +30,19 @@ function App() {
     setSessionScore(0);
   };
 
-  // Render content based on the current game state
   const renderContent = () => {
     switch (gameState) {
       case 'timeAttack':
       case 'clearTheBoard':
-        return <GameUI 
+        return (
+          <GameUI 
             gameMode={gameState} 
             onGoHome={handleGoHome}
             sessionScore={sessionScore}
             onIncrementScore={handleIncrementScore}
             onResetScore={handleResetScore}
-          />;
+          />
+        );
       case 'landing':
       default:
         return <LandingPage onStartGame={handleStartGame} />;
@@ -52,7 +50,7 @@ function App() {
   };
 
   return (
-    <div className="app-container">
+    <div className="app">
       {renderContent()}
     </div>
   );

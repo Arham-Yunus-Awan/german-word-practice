@@ -74,3 +74,24 @@
 .mode-button.clear-board h3 {
   color: #43a047;
 }
+/* In src/styles/LandingPage.css */
+
+/* ... (keep all your existing styles for .landing-container, .mode-button, etc.) ... */
+
+
+/* --- ADD THIS AT THE END OF THE FILE --- */
+@media (max-width: 650px) {
+  .game-modes {
+    /* On small screens, stack the buttons vertically instead of side-by-side */
+    flex-direction: column;
+  }
+
+  .landing-box {
+    /* Reduce padding on smaller screens to give more space */
+    padding: 2rem 1.5rem;
+  }
+
+  .landing-box h1 {
+    font-size: 2rem;
+  }
+}

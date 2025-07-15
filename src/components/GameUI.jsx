@@ -151,9 +151,13 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
   }, [boardMatches, gameMode, initializeGame]);
 
   return (
-    <div className="app">
-      <button onClick={onGoHome} className="home-button">← Go Home</button>
-      <h1>{gameMode === 'timeAttack' ? 'Time Attack Mode' : 'Clear the Board Mode'}</h1>
+    // Return a fragment instead of a div with class "app"
+    <> 
+      <div className="app-header">
+        <button onClick={onGoHome} className="home-button">← Go Home</button>
+        <h1>{gameMode === 'timeAttack' ? 'Time Attack' : 'Clear the Board'}</h1>
+      </div>
+
       
       {gameMode === 'timeAttack' && <Timer time={time} isRunning={isRunning} />}
       
@@ -175,7 +179,7 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
       <div className="game-info">
         <p>Total Score: {sessionScore}</p>
       </div>
-    </div>
+    </>
   );
 };
 
