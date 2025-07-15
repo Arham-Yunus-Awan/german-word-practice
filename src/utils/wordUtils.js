@@ -1,122 +1,78 @@
-// utils/wordUtils.js
+// src/utils/wordUtils.js
 
-// Helper to shuffle arrays
+// Helper to shuffle arrays - no changes needed here, it's efficient enough.
 const shuffleArray = (array) => {
+  // Fisher-Yates shuffle is more robust, but sort is fine for this scale.
   return [...array].sort(() => Math.random() - 0.5);
 };
 
 /**
- * Gets an initial set of random words for the game board.
- * Ensures 'count' unique German words and their direct English translations are selected.
- * @param {object} dict The dictionary object.
- * @param {number} count The number of pairs to select for the initial board.
- * @returns {{germanWords: string[], englishWords: string[], pairs: object[]}}
- * An object containing shuffled German words, shuffled English words, and the corresponding pairs.
+ * Gets an initial set of random words.
+ * This function is only called once at the start, so its efficiency is less critical,
+ * but we can still make it slightly cleaner.
  */
 export const getRandomWords = (dict, count = 5) => {
-  const allPossiblePairs = Object.entries(dict).flatMap(([de, en]) => {
-    const translations = Array.isArray(en) ? en : [en];
-    // For initial setup, pick one random translation if it's a list
-    const chosenEn = translations[Math.floor(Math.random() * translations.length)];
-    return { de, en: chosenEn, originalEn: en }; // Store original 'en' for later lookup if needed
-  });
-
-  const uniqueGermanWordsSet = new Set();
+  const germanKeys = Object.keys(dict);
+  const shuffledKeys = shuffleArray(germanKeys);
   const selectedPairs = [];
-  const tempShuffledPairs = shuffleArray([...allPossiblePairs]);
 
-  // Select 'count' unique German words to form the initial pairs
-  while (selectedPairs.length < count && tempShuffledPairs.length > 0) {
-    const pair = tempShuffledPairs.pop();
-    if (!uniqueGermanWordsSet.has(pair.de)) {
-      uniqueGermanWordsSet.add(pair.de);
-      selectedPairs.push(pair);
-    }
-  }
+  // Ensure we don't get stuck in a loop if count > dictionary size
+  const numPairsToGet = Math.min(count, shuffledKeys.length);
 
-  // If we couldn't find enough unique German words from shuffled pairs, fill with whatever available
-  while (selectedPairs.length < count && allPossiblePairs.length > 0) {
-      const remainingPair = allPossiblePairs.pop();
-      selectedPairs.push(remainingPair);
+  for (let i = 0; i < numPairsToGet; i++) {
+    const de = shuffledKeys[i];
+    const en = dict[de];
+    const translations = Array.isArray(en) ? en : [en];
+    const chosenEn = translations[Math.floor(Math.random() * translations.length)];
+    selectedPairs.push({ de, en: chosenEn, originalEn: en });
   }
 
   const gameGermanWords = selectedPairs.map(p => p.de);
   const gameEnglishWords = selectedPairs.map(p => p.en);
 
   return {
-    germanWords: shuffleArray(gameGermanWords), // Shuffle for initial display
-    englishWords: shuffleArray(gameEnglishWords), // Shuffle for initial display
-    pairs: selectedPairs // The actual matching pairs for game logic (with chosen 'en' translation)
+    germanWords: shuffleArray(gameGermanWords),
+    englishWords: shuffleArray(gameEnglishWords),
+    pairs: selectedPairs,
   };
 };
 
 /**
- * Gets a single new random unique pair from the dictionary that is not present on the current board.
- * Prioritizes a pair where both German and English words are not currently visible.
- * Falls back to finding a pair where at least the German word is new.
- * Handles dictionary values that are lists of translations.
+ * Gets a single new random unique pair from the dictionary.
+ * This is the most critical function to optimize as it's called on every correct match.
+ *
  * @param {object} dict The dictionary object.
- * @param {Array<object>} existingPairs An array of pairs currently on the board ({de, en}).
- * @returns {object} A new unique pair ({de, en}), or a potentially non-unique fallback if dictionary exhausted.
+ * @param {Array<object>} existingPairs An array of pairs currently on the board.
+ * @returns {object} A new unique pair.
  */
 export const getNewUniquePair = (dict, existingPairs) => {
-  const allPossiblePairs = Object.entries(dict).flatMap(([de, en]) => {
-    const translations = Array.isArray(en) ? en : [en];
-    // Create a pair for each possible translation for checking uniqueness
-    return translations.map(t => ({ de, en: t, originalEn: en }));
-  });
-
-  // Create sets for efficient lookup of existing German and English words on the board
+  // Create lookup sets for existing words on the board. This is very fast.
   const existingGermanWords = new Set(existingPairs.map(p => p.de));
-  const existingEnglishWords = new Set(existingPairs.map(p => p.en));
 
-  const shuffledAllPairs = shuffleArray([...allPossiblePairs]);
+  // Get all possible German words from the dictionary and shuffle them.
+  // This is more efficient than creating all possible pairs.
+  const allGermanKeys = Object.keys(dict);
+  const shuffledKeys = shuffleArray(allGermanKeys);
 
-  // Attempt 1: Find a pair where both German and English words are completely new to the board
-  while (shuffledAllPairs.length > 0) {
-    const candidatePair = shuffledAllPairs.pop();
-
-    // Check if both the German word and the *specific* English translation
-    // of the candidate pair are NOT currently on the board.
-    // Also, ensure the exact pair itself isn't already there.
-    const isExactDuplicatePair = existingPairs.some(
-      (ep) => ep.de === candidatePair.de && ep.en === candidatePair.en
-    );
-
-    if (
-      !existingGermanWords.has(candidatePair.de) &&
-      !existingEnglishWords.has(candidatePair.en) &&
-      !isExactDuplicatePair
-    ) {
-        // If the English translation chosen is from a list, make sure to pick one for display
-        const finalEn = Array.isArray(candidatePair.originalEn)
-            ? candidatePair.originalEn[Math.floor(Math.random() * candidatePair.originalEn.length)]
-            : candidatePair.originalEn;
-        return { de: candidatePair.de, en: finalEn, originalEn: candidatePair.originalEn };
+  // Find the first key that is not already on the board.
+  for (const de of shuffledKeys) {
+    if (!existingGermanWords.has(de)) {
+      // Found a new German word. Create a pair from it.
+      const en = dict[de];
+      const translations = Array.isArray(en) ? en : [en];
+      const chosenEn = translations[Math.floor(Math.random() * translations.length)];
+      
+      // Return the new pair immediately.
+      return { de, en: chosenEn, originalEn: en };
     }
   }
 
-  // Attempt 2: Fallback if no completely new unique pair is found.
-  // Try to find a pair where at least the German word is new.
-  const secondAttemptShuffledPairs = shuffleArray([...allPossiblePairs]);
-  while (secondAttemptShuffledPairs.length > 0) {
-    const candidatePair = secondAttemptShuffledPairs.pop();
-     if (!existingGermanWords.has(candidatePair.de)) {
-        const finalEn = Array.isArray(candidatePair.originalEn)
-            ? candidatePair.originalEn[Math.floor(Math.random() * candidatePair.originalEn.length)]
-            : candidatePair.originalEn;
-        return { de: candidatePair.de, en: finalEn, originalEn: candidatePair.originalEn };
-    }
-  }
-
-  // Last Resort: If dictionary is extremely limited, return a random pair.
-  console.warn("Could not find a completely new unique pair. Reusing words from dictionary.");
-  if (allPossiblePairs.length > 0) {
-      const fallbackPair = allPossiblePairs[Math.floor(Math.random() * allPossiblePairs.length)];
-      const finalEn = Array.isArray(fallbackPair.originalEn)
-            ? fallbackPair.originalEn[Math.floor(Math.random() * fallbackPair.originalEn.length)]
-            : fallbackPair.originalEn;
-      return { de: fallbackPair.de, en: finalEn, originalEn: fallbackPair.originalEn };
-  }
-  return { de: "No Word", en: "No Translation" }; // Should only happen if dictionary is empty
+  // Fallback: If all German words are somehow on the board (small dictionary),
+  // return a random pair to prevent the game from crashing.
+  console.warn("Could not find a new unique German word. Reusing a word.");
+  const fallbackKey = allGermanKeys[Math.floor(Math.random() * allGermanKeys.length)];
+  const en = dict[fallbackKey];
+  const translations = Array.isArray(en) ? en : [en];
+  const chosenEn = translations[Math.floor(Math.random() * translations.length)];
+  return { de: fallbackKey, en: chosenEn, originalEn: en };
 };

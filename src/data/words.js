@@ -1,3123 +1,2040 @@
 const dictionary = {
-	"a": "A",
-	"ab": [
-		"starting",
-		"off",
-		"up"
-	],
-	"Abendessen": "dinner",
-	"abends": [
-		"in the evenings",
-		"in the evening"
-	],
-	"aber": [
-		"but",
-		"however"
-	],
-	"Abfahrt": "departure",
-	"Abflug": "departure",
-	"abholen": "pick up",
-	"ach": "oh",
-	"acht": "eight",
-	"achtunddreißig": "thirty-eight",
-	"Achtung": [
-		"careful",
-		"attention",
-		"watch out"
-	],
-	"achtzehn": "eighteen",
-	"achtzehnten": "eighteenth",
-	"achtzig": "eighty",
-	"Adresse": "address",
-	"alle": "everybody",
-	"allein": "alone",
-	"alles": [
-		"everything",
-		"all"
-	],
-	"alles Gute": [
-		"take care",
-		"all the best",
-		"take"
-	],
-	"alt": "old",
-	"am": [
-		"by the",
-		"the",
-		"a"
-	],
-	"am besten": [
-		"the best",
-		"best"
-	],
-	"am See": "at the lake",
-	"am Telefon": "on the phone",
-	"am Wochenende": "on the weekend",
-	"Amerika": "America",
-	"Amerikaner": "American",
-	"Amerikanerin": "American",
-	"an": [
-		"around",
-		"wearing",
-		"in line"
-	],
-	"anfangen": "start",
-	"anrufen": "call",
-	"Anwalt": [
-		"lawyer",
-		"barrister",
-		"solicitor"
-	],
-	"Anwältin": [
-		"lawyer",
-		"a lawyer"
-	],
-	"Anzug": "suit",
-	"Apfel": "apple",
-	"Apfelkuchen": [
-		"apple cake",
-		"apple pie"
-	],
-	"Apfelsaft": "apple juice",
-	"Apfelschorle": [
-		"sparkling apple juice",
-		"carbonated apple juice",
-		"apple juice spritzer"
-	],
-	"Apotheke": [
-		"pharmacy",
-		"drugstore",
-		"chemist"
-	],
-	"April": "April",
-	"Arbeit": [
-		"work",
-		"piece of work",
-		"job"
-	],
-	"arbeite": [
-		"am working",
-		"work",
-		"have been working"
-	],
-	"arbeiten": "work",
-	"arbeitest": [
-		"work",
-		"are working",
-		"working"
-	],
-	"arbeitet": [
-		"work",
-		"works",
-		"are working"
-	],
-	"arbeitslos": [
-		"unemployed",
-		"jobless",
-		"out of work"
-	],
-	"Arzt": [
-		"doctor",
-		"physician"
-	],
-	"au": [
-		"ow",
-		"oh",
-		"ouch"
-	],
-	"auch": [
-		"also",
-		"as well",
-		"too"
-	],
-	"auf": [
-		"on to",
-		"on top of",
-		"onto"
-	],
-	"auf jeden Fall": "definitely",
-	"auf Wiedersehen": "goodbye",
-	"aufgeregt": [
-		"excited",
-		"eager",
-		"jumpy"
-	],
-	"aufhören": "end",
-	"aufregend": [
-		"exciting",
-		"thrilling"
-	],
-	"Aufzug": [
-		"elevator",
-		"lift"
-	],
-	"Auge": "eye",
-	"August": "August",
-	"aus": [
-		"made of",
-		"out",
-		"off"
-	],
-	"Ausflug": "excursion",
-	"ausschlafen": "sleep in",
-	"ausverkauft": "sold out",
-	"Ausweis": [
-		"ID card",
-		"ID",
-		"identification card"
-	],
-	"Auto": [
-		"car",
-		"auto",
-		"automobile"
-	],
-	"Baby": "baby",
-	"backen": [
-		"bakes",
-		"baked",
-		"making"
-	],
-	"Badeanzug": "swimsuit",
-	"Badezimmer": [
-		"bathroom",
-		"restroom",
-		"washroom"
-	],
-	"Bahnhof": [
-		"train station",
-		"railway station",
-		"rail station"
-	],
-	"bald": "soon",
-	"Balkon": "balcony",
-	"Banane": "banana",
-	"Bananen": "bananas",
-	"Band": "band",
-	"Bank": [
-		"bench",
-		"bank"
-	],
-	"Bar": "bar",
-	"bar": [
-		"cash",
-		"in cash"
-	],
-	"Basketball": "basketball",
-	"Basketballspiel": "basketball game",
-	"Bauchschmerzen": [
-		"stomachache",
-		"tummyache"
-	],
-	"Beamter": [
-		"civil servant",
-		"public official",
-		"official"
-	],
-	"Beamtin": [
-		"civil servant",
-		"public official",
-		"official"
-	],
-	"beginnt": [
-		"begin",
-		"is starting",
-		"start"
-	],
-	"bekommt": [
-		"is getting",
-		"getting",
-		"get"
-	],
-	"beliebt": [
-		"popular",
-		"well-liked"
-	],
-	"benutzen": [
-		"are using",
-		"use",
-		"used"
-	],
-	"bequem": [
-		"comfortable",
-		"comfortably"
-	],
-	"Beruf": [
-		"profession",
-		"job",
-		"occupation"
-	],
-	"besichtigen": [
-		"are touring",
-		"saw",
-		"tour"
-	],
-	"besser": "better",
-	"bestellen": "order",
-	"besuchen": "visit",
-	"Bett": "bed",
-	"Bettdecke": [
-		"bedspread",
-		"blanket",
-		"bed blanket"
-	],
-	"bewölkt": "cloudy",
-	"Bibliothek": "library",
-	"Bier": "beer",
-	"Biergarten": "beer garden",
-	"Bild": [
-		"painting",
-		"picture",
-		"photo"
-	],
-	"billig": [
-		"cheap",
-		"inexpensive"
-	],
-	"bin": [
-		"am",
-		"will be",
-		"feel"
-	],
-	"Biogurken": "organic cucumbers",
-	"Bioladen": "health food store",
-	"bis": [
-		"until",
-		"till",
-		"'til"
-	],
-	"bis bald": "see you soon",
-	"bis morgen": "see you tomorrow",
-	"bis später": "see you later",
-	"bis zum Hotel": "to the hotel",
-	"bist": [
-		"are",
-		"have been",
-		"were"
-	],
-	"Bitte": "request",
-	"bitte": "please",
-	"bleiben": [
-		"stay",
-		"being",
-		"stopped"
-	],
-	"Blumen": "flowers",
-	"Blumenladen": "florist",
-	"Bluse": [
-		"blouse",
-		"shirt",
-		"top"
-	],
-	"Brandenburger Tor": "Brandenburg Gate",
-	"brauchen": [
-		"need",
-		"do need"
-	],
-	"brauchst": [
-		"need",
-		"use"
-	],
-	"braun": "brown",
-	"brav": [
-		"well-behaved",
-		"good"
-	],
-	"Brezel": "pretzel",
-	"Brille": [
-		"glasses",
-		"spectacles",
-		"eyeglasses"
-	],
-	"bringe": [
-		"take",
-		"am taking",
-		"bring"
-	],
-	"bringen": [
-		"are bringing",
-		"take",
-		"is bringing"
-	],
-	"bringst": [
-		"are bringing",
-		"bring"
-	],
-	"Brot": "bread",
-	"Bruder": "brother",
-	"Brötchen": [
-		"roll",
-		"bread roll",
-		"bun"
-	],
-	"Buch": "book",
-	"Buchladen": [
-		"bookstore",
-		"bookshop"
-	],
-	"Bus": "bus",
-	"Bushaltestelle": "bus stop",
-	"Bäckerei": [
-		"bakery",
-		"baker's"
-	],
-	"Bär": "bear",
-	"Bären": [
-		"bear",
-		"bears"
-	],
-	"Bäume": "trees",
-	"Bücher": "books",
-	"Bücherregal": [
-		"bookcase",
-		"bookshelf"
-	],
-	"Büro": "office",
-	"Büros": [
-		"offices",
-		"office"
-	],
-	"Café": [
-		"coffee shop",
-		"cafe",
-		"coffeehouse"
-	],
-	"Cafés": [
-		"coffee shops",
-		"cafés"
-	],
-	"campe": [
-		"am camping",
-		"go camping",
-		"camp"
-	],
-	"Cent": [
-		"cents",
-		"cent"
-	],
-	"circa": "approximately",
-	"Club": [
-		"club",
-		"clubs"
-	],
-	"Cola": "cola",
-	"Computer": [
-		"computers",
-		"computer"
-	],
-	"cool": "cool",
-	"Couch": "couch",
-	"Currywurst": [
-		"curry sausage",
-		"currywurst",
-		"curried sausage"
-	],
-	"da drüben": "over there",
-	"danke": "thank you",
-	"dann": "then",
-	"das": [
-		"that",
-		"this",
-		"so"
-	],
-	"Date": "date",
-	"dauert": [
-		"lasts",
-		"takes",
-		"does last"
-	],
-	"dein": "your",
-	"deine": [
-		"your",
-		"yours"
-	],
-	"deinem": [
-		"your",
-		"of you",
-		"yours"
-	],
-	"deinen": [
-		"your",
-		"to your",
-		"for your"
-	],
-	"deiner": [
-		"your",
-		"of you",
-		"of your"
-	],
-	"den": [
-		"her",
-		"the",
-		"that"
-	],
-	"den ganzen Tag": [
-		"the whole day",
-		"all day"
-	],
-	"denn": [
-		"because",
-		"for"
-	],
-	"der": [
-		"this",
-		"to the",
-		"of the"
-	],
-	"Deutsch": "German",
-	"Deutsche": [
-		"German",
-		"a German",
-		"Germans"
-	],
-	"Deutscher": "German",
-	"Deutschland": "Germany",
-	"Dezember": "December",
-	"dich": [
-		"you",
-		"yourself"
-	],
-	"die": [
-		"this",
-		"the",
-		"that"
-	],
-	"Dienstag": "Tuesday",
-	"diese": [
-		"this one",
-		"this",
-		"that"
-	],
-	"diesen": [
-		"this",
-		"that",
-		"these"
-	],
-	"dieser": "this",
-	"dieses": [
-		"this",
-		"of this",
-		"these"
-	],
-	"Dollar": [
-		"dollar",
-		"dollars"
-	],
-	"Donnerstag": "Thursday",
-	"Doppelzimmer": "double room",
-	"Dorf": [
-		"village",
-		"town",
-		"small town"
-	],
-	"dort": "there",
-	"drei": "three",
-	"dreizehn": [
-		"thirteen",
-		"13"
-	],
-	"dreißig": [
-		"thirty",
-		"30"
-	],
-	"dritten": "third",
-	"du": "you",
-	"dunkel": "dark",
-	"Durst": [
-		"thirst",
-		"thirsty"
-	],
-	"Dusche": "shower",
-	"Döner": [
-		"doner kebab",
-		"kebab"
-	],
-	"dünn": [
-		"thin",
-		"slim",
-		"smallest"
-	],
-	"E-Mail-Adresse": "e-mail address",
-	"eh": [
-		"in any case",
-		"hey",
-		"anyway"
-	],
-	"ehe": [
-		"anyways",
-		"in any case",
-		"marriage"
-	],
-	"Ehefrau": "wife",
-	"Ehemann": "husband",
-	"Ei": "egg",
-	"Eier": "eggs",
-	"ein": [
-		"a",
-		"one",
-		"submit"
-	],
-	"eine": [
-		"an",
-		"a",
-		"one"
-	],
-	"einen": [
-		"an",
-		"a",
-		"one"
-	],
-	"einen schönen Tag noch": "have a nice day",
-	"einfach": [
-		"easy",
-		"simple"
-	],
-	"einkaufen": "to shop",
-	"einladen": "invite",
-	"Einladung": "invitation",
-	"einmal": "once",
-	"einpacken": "pack",
-	"eins": "one",
-	"Eintrittskarte": [
-		"admission ticket",
-		"[admission/entry/entrance] [ticket/pass/card]"
-	],
-	"Eintrittskarten": [
-		"admission tickets",
-		"tickets"
-	],
-	"einundzwanzig": "twenty-one",
-	"Einzelzimmer": "single room",
-	"Eis": [
-		"ice cream",
-		"ice"
-	],
-	"Eiskaffee": [
-		"ice cream coffee",
-		"coffee with ice cream",
-		"iced coffeee"
-	],
-	"Elefant": "elephant",
-	"Elefanten": [
-		"elephant",
-		"elephants"
-	],
-	"elegant": "elegant",
-	"elf": [
-		"eleven",
-		"11"
-	],
-	"Eltern": "parents",
-	"endet": [
-		"finishes",
-		"ends",
-		"finish"
-	],
-	"endlich": "finally",
-	"Englisch": "English",
-	"Entschuldigung": [
-		"sorry",
-		"excuse me",
-		"apologies"
-	],
-	"er": [
-		"it's",
-		"he's",
-		"him"
-	],
-	"Erdbeeren": "strawberries",
-	"ersten": "first",
-	"Erwachsene": [
-		"adult",
-		"adults"
-	],
-	"es": "it",
-	"es geht": "I'm all right",
-	"es gibt": [
-		"there are",
-		"there is",
-		"there's"
-	],
-	"es tut mir leid": "I am sorry",
-	"esse": [
-		"am eating",
-		"am having",
-		"have"
-	],
-	"essen": "eat",
-	"Essen": "food",
-	"Esszimmer": "dining room",
-	"euer": [
-		"your",
-		"yours"
-	],
-	"Eule": "owl",
-	"eure": [
-		"your",
-		"yours"
-	],
-	"euren": [
-		"your",
-		"yours",
-		"to your"
-	],
-	"Euro": [
-		"euros",
-		"euro"
-	],
-	"fahre": [
-		"am traveling",
-		"am going",
-		"traveling"
-	],
-	"fahren": [
-		"are riding",
-		"are departing",
-		"run"
-	],
-	"Fahrkarte": "ticket",
-	"Fahrkarten": "tickets",
-	"Fahrrad": "bicycle",
-	"Familie": "family",
-	"fantastisch": [
-		"fantastic",
-		"great",
-		"terrific"
-	],
-	"fast": [
-		"almost",
-		"nearly"
-	],
-	"faul": "lazy",
-	"Februar": "February",
-	"Feierabend": "end of the workday",
-	"feiern": [
-		"celebrate",
-		"are celebrating",
-		"celebrating"
-	],
-	"feiert": [
-		"celebrate",
-		"celebrates",
-		"is celebrating"
-	],
-	"Feiertag": [
-		"holiday",
-		"bank holiday",
-		"public holiday"
-	],
-	"Fenster": "window",
-	"Ferien": [
-		"vacations",
-		"break",
-		"holidays"
-	],
-	"fernsehen": "watch TV",
-	"Fernseher": [
-		"TV",
-		"TV set",
-		"television"
-	],
-	"fertig": "finished",
-	"Fieber": "fever",
-	"Film": [
-		"movie",
-		"film"
-	],
-	"finden": "find",
-	"Fisch": "fish",
-	"fischen": [
-		"fish",
-		"fishing"
-	],
-	"Fitnessstudio": [
-		"gym",
-		"health club",
-		"exercise centre"
-	],
-	"Flasche": "bottle",
-	"Flaschen": [
-		"bottles",
-		"bottles of"
-	],
-	"Fleisch": "meat",
-	"fliegen": [
-		"are flying",
-		"fly",
-		"flying"
-	],
-	"Flughafen": "airport",
-	"Flugnummer": "flight number",
-	"Fluss": "river",
-	"Formular": [
-		"form",
-		"questionnaire"
-	],
-	"fotografiere": [
-		"take photos",
-		"take pictures"
-	],
-	"Frage": "question",
-	"Frankreich": "France",
-	"Französisch": "French",
-	"Frau": [
-		"woman",
-		"wife",
-		"Ms."
-	],
-	"frei": [
-		"free",
-		"available"
-	],
-	"Freitag": "Friday",
-	"freitags": "on Fridays",
-	"Freizeit": [
-		"free time",
-		"leisure time",
-		"spare time"
-	],
-	"Freund": [
-		"boyfriend",
-		"partner"
-	],
-	"Freunde": [
-		"friends",
-		"friends'"
-	],
-	"Freundin": [
-		"girlfriend",
-		"friend",
-		"friend's"
-	],
-	"Freundinnen": [
-		"friends",
-		"girlfriends"
-	],
-	"freundlich": "friendly",
-	"freut mich": [
-		"nice to meet you",
-		"nice"
-	],
-	"frisch": "fresh",
-	"früh": "early",
-	"früher": "earlier",
-	"Frühling": [
-		"spring",
-		"springtime"
-	],
-	"Frühstück": "breakfast",
-	"frühstücke": [
-		"eat breakfast",
-		"am eating breakfast"
-	],
-	"frühstücken": [
-		"are eating breakfast",
-		"eat breakfast"
-	],
-	"frühstückst": [
-		"are eating breakfast",
-		"eat breakfast"
-	],
-	"frühstückt": [
-		"are eating breakfast",
-		"eats breakfast",
-		"is eating breakfast"
-	],
-	"funktioniert": [
-		"work",
-		"works",
-		"is working"
-	],
-	"Fuß": "foot",
-	"Fußball": [
-		"soccer",
-		"football"
-	],
-	"Fußballspiel": "soccer game",
-	"fährst": [
-		"are riding",
-		"drive",
-		"go"
-	],
-	"fährt": [
-		"driving",
-		"is driving",
-		"riding"
-	],
-	"fällt": [
-		"fall",
-		"is falling",
-		"cases"
-	],
-	"fängt": [
-		"fields",
-		"catches",
-		"catch"
-	],
-	"Führerschein": "driver's license",
-	"fünf": "five",
-	"fünfunddreißig": [
-		"thirty-five",
-		"35"
-	],
-	"fünfundvierzig": "forty-five",
-	"fünfundzwanzig": [
-		"twenty-five",
-		"25"
-	],
-	"fünfzehn": [
-		"fifteen",
-		"15"
-	],
-	"fünfzig": "fifty",
-	"für": "for",
-	"ganz bestimmt": "definitely",
-	"Garten": [
-		"garden",
-		"yard"
-	],
-	"gebrochen": "broken",
-	"Geburtstag": "birthday",
-	"Geburtstagskarte": "birthday card",
-	"Gebäude": "building",
-	"gefährlich": "dangerous",
-	"geh": [
-		"go",
-		"leave"
-	],
-	"gehe": [
-		"am going",
-		"walking",
-		"go"
-	],
-	"gehen": [
-		"go",
-		"walk",
-		"leave"
-	],
-	"Geige": [
-		"violin",
-		"fiddle"
-	],
-	"gelb": "yellow",
-	"Geld": "money",
-	"Geldautomat": [
-		"ATM",
-		"cash dispenser",
-		"cashpoint"
-	],
-	"Gemüse": [
-		"vegetables",
-		"vegetable"
-	],
-	"genau": [
-		"exactly",
-		"precisely"
-	],
-	"genug": "enough",
-	"Gepäck": "luggage",
-	"gerade": "right now",
-	"geradeaus": "straight ahead",
-	"gern": [
-		"like",
-		"liked to",
-		"happy to"
-	],
-	"gern geschehen": "you are welcome",
-	"Geschenk": [
-		"gift",
-		"present"
-	],
-	"Geschenke": [
-		"gifts",
-		"presents"
-	],
-	"Geschichte": "history",
-	"geschlossen": [
-		"closed",
-		"locked",
-		"shut"
-	],
-	"Geschwister": "siblings",
-	"Geschäft": "store",
-	"Geschäfte": [
-		"stores",
-		"businesses",
-		"business"
-	],
-	"gesund": [
-		"healthy",
-		"fit",
-		"well"
-	],
-	"getrennt": "separately",
-	"Getränke": "drinks",
-	"geöffnet": "open",
-	"gibt es": [
-		"is",
-		"there are",
-		"is there"
-	],
-	"Gitarre": "guitar",
-	"Glas": [
-		"glass",
-		"jar"
-	],
-	"glaube": [
-		"believe",
-		"think"
-	],
-	"gleich": "shortly",
-	"Gleis": [
-		"track",
-		"platform"
-	],
-	"Gläser": [
-		"glasses",
-		"glasses of",
-		"jars"
-	],
-	"glücklich": "happy",
-	"Gras": "grass",
-	"grau": [
-		"gray",
-		"grey"
-	],
-	"griechisch": "Greek",
-	"grillen": "grill",
-	"Grillparty": "barbecue",
-	"groß": "tall",
-	"Großeltern": "grandparents",
-	"Großmutter": [
-		"grandmother",
-		"grandma",
-		"nan"
-	],
-	"Großvater": [
-		"grandfather",
-		"granddad",
-		"grandad"
-	],
-	"Größe": "size",
-	"grün": "green",
-	"Gurke": "cucumber",
-	"Gurken": "cucumbers",
-	"gut": "good",
-	"gute Besserung": [
-		"feel better",
-		"get well"
-	],
-	"gute Nacht": "good night",
-	"gute Reise": "have a good trip",
-	"guten Appetit": "enjoy your meal",
-	"guten Tag": "hello",
-	"Gäste": [
-		"visitors",
-		"guests",
-		"guests'"
-	],
-	"ha": "ha",
-	"habe": [
-		"am",
-		"have been",
-		"did"
-	],
-	"haben": [
-		"have",
-		"do have",
-		"have had"
-	],
-	"habt": [
-		"did",
-		"have",
-		"meet"
-	],
-	"halb": "half",
-	"hallo": "hello",
-	"Handball": "Handball",
-	"Handy": [
-		"cell phone",
-		"mobile phone",
-		"mobile"
-	],
-	"Handynummer": "cell phone number",
-	"hast": [
-		"have",
-		"are",
-		"were"
-	],
-	"hat": [
-		"has",
-		"was",
-		"is"
-	],
-	"Haus": [
-		"house",
-		"home"
-	],
-	"Hausarbeit": "chores",
-	"Hausaufgaben": [
-		"homework",
-		"homework assignments"
-	],
-	"Haustiere": "pets",
-	"heiß": "hot",
-	"heiße": [
-		"hot",
-		"am called"
-	],
-	"heißen": [
-		"hot",
-		"name",
-		"go"
-	],
-	"heißt": [
-		"is",
-		"name is",
-		"is called"
-	],
-	"hell": [
-		"bright",
-		"light"
-	],
-	"Hemd": "shirt",
-	"Herbst": [
-		"fall",
-		"autumn"
-	],
-	"Herr": [
-		"Mr.",
-		"gentleman"
-	],
-	"herzlichen Glückwunsch": "congratulations",
-	"heute": "today",
-	"heute Abend": [
-		"this evening",
-		"tonight"
-	],
-	"heute Morgen": "this morning",
-	"heute Nachmittag": "this afternoon",
-	"heute Nacht": "tonight",
-	"Hexe": "witch",
-	"hier": "here",
-	"Hilfe": "help",
-	"hilfreich": "helpful",
-	"Hin- und Rückfahrt": [
-		"round-trip ticket",
-		"round trip",
-		"return ticket"
-	],
-	"hinten": [
-		"in the back",
-		"at the back",
-		"in the rear"
-	],
-	"Hobbys": "hobbies",
-	"hoch": [
-		"tall",
-		"high",
-		"up"
-	],
-	"Hockey": "hockey",
-	"hoffen": [
-		"hope",
-		"hoping",
-		"are hoping"
-	],
-	"hole": [
-		"am getting",
-		"will pick up",
-		"pick"
-	],
-	"holst": [
-		"get",
-		"pick",
-		"bring"
-	],
-	"holt": [
-		"pick up",
-		"gets",
-		"get"
-	],
-	"Horrorfilm": [
-		"horror movie",
-		"horror film"
-	],
-	"Hotel": "hotel",
-	"Hund": "dog",
-	"hundert": "one hundred",
-	"Hunger": [
-		"hunger",
-		"hungry"
-	],
-	"hungrig": "hungry",
-	"hurra": [
-		"hooray",
-		"woohoo",
-		"yippie"
-	],
-	"Hut": "hat",
-	"Hähnchen": "chicken",
-	"hässlich": [
-		"ugly",
-		"hideous",
-		"unsightly"
-	],
-	"höre": [
-		"listening",
-		"to listen to",
-		"hear"
-	],
-	"hören": [
-		"hear",
-		"listen to",
-		"listen"
-	],
-	"hört": [
-		"hears",
-		"hear",
-		"listens to"
-	],
-	"ICE": [
-		"intercity express",
-		"ICE"
-	],
-	"ich": "I",
-	"ie": "ie",
-	"ihn": "him",
-	"ihr": [
-		"she",
-		"her",
-		"to her"
-	],
-	"Ihr": [
-		"she",
-		"your",
-		"her"
-	],
-	"Ihre": [
-		"your",
-		"yours",
-		"Their"
-	],
-	"ihre": [
-		"her",
-		"hers",
-		"theirs"
-	],
-	"ihrem": [
-		"their",
-		"to their",
-		"to her"
-	],
-	"ihren": [
-		"their",
-		"to their",
-		"for their"
-	],
-	"Ihren": [
-		"It",
-		"your",
-		"yours"
-	],
-	"ihrer": [
-		"her",
-		"hers",
-		"their"
-	],
-	"im": [
-		"this",
-		"to the",
-		"in the"
-	],
-	"im Ausland": "abroad",
-	"im Bett": "in bed",
-	"immer": "always",
-	"in": [
-		"in",
-		"with",
-		"inside"
-	],
-	"in den Ferien": "during the break",
-	"in der Nähe": [
-		"close",
-		"nearby",
-		"near"
-	],
-	"in die Bar": "to the bar",
-	"ins": [
-		"this",
-		"to the",
-		"that"
-	],
-	"Instrument": "instrument",
-	"intelligent": "intelligent",
-	"interessant": "interesting",
-	"Internet": "internet",
-	"iss": "eat",
-	"isst": [
-		"eats",
-		"is eating",
-		"eating"
-	],
-	"ist": [
-		"is",
-		"there is",
-		"'s"
-	],
-	"italienisch": "Italian",
-	"ja": "yes",
-	"Jacke": "jacket",
-	"Jahr": "year",
-	"Jahre": [
-		"years",
-		"years'"
-	],
-	"Jahrestag": "anniversary",
-	"Januar": "January",
-	"Japan": "Japan",
-	"Jazz": "jazz",
-	"je": [
-		"for each",
-		"per",
-		"once"
-	],
-	"Jeans": [
-		"jeans",
-		"pair of jeans"
-	],
-	"jede": [
-		"any",
-		"all",
-		"each"
-	],
-	"jeden": [
-		"any",
-		"all",
-		"each"
-	],
-	"jeder": "every",
-	"jedes": [
-		"all",
-		"every",
-		"anything"
-	],
-	"jemand": "someone",
-	"jetzt": [
-		"now",
-		"at the moment",
-		"currently"
-	],
-	"Job": "job",
-	"Jobinterview": [
-		"job interview",
-		"interview"
-	],
-	"jogge": [
-		"am jogging",
-		"jog",
-		"jogging"
-	],
-	"joggen": [
-		"to jog",
-		"jogging"
-	],
-	"joggst": [
-		"jog",
-		"are jogging"
-	],
-	"joggt": [
-		"jogs",
-		"is jogging"
-	],
-	"Joghurt": [
-		"yogurt",
-		"yoghurt"
-	],
-	"Juli": "July",
-	"jung": "young",
-	"Junge": "boy",
-	"Jungen": [
-		"boys",
-		"boy"
-	],
-	"Juni": "June",
-	"Kaffee": "coffee",
-	"Kaffeetisch": "coffee table",
-	"kalt": "cold",
-	"Kamera": "camera",
-	"Kanada": "Canada",
-	"Kanadier": [
-		"Canadians",
-		"Canadian"
-	],
-	"Kanadierin": "Canadian",
-	"kann": [
-		"am able to",
-		"know",
-		"can"
-	],
-	"kannst": [
-		"can",
-		"are able to",
-		"could"
-	],
-	"Kanzlerin": [
-		"chancellor",
-		"the chancellor",
-		"a chancellor"
-	],
-	"kaputt": [
-		"broken",
-		"broken down",
-		"busted"
-	],
-	"Karotten": "carrots",
-	"Kartoffeln": "potatoes",
-	"Kartoffelsalat": "potato salad",
-	"Kasse": "cash register",
-	"Kassenzettel": "receipt",
-	"Katze": "cat",
-	"kauf": "buy",
-	"kaufen": [
-		"buy",
-		"to get",
-		"to purchase"
-	],
-	"Kaufhaus": [
-		"department store",
-		"store"
-	],
-	"kaufst": [
-		"buy",
-		"are buying",
-		"shop"
-	],
-	"kein": [
-		"any",
-		"no",
-		"not an"
-	],
-	"keine": [
-		"any",
-		"n't",
-		"no"
-	],
-	"keinen": [
-		"any",
-		"not any",
-		"no"
-	],
-	"keinen Hunger": "not hungry",
-	"Kekse": [
-		"cookies",
-		"biscuits"
-	],
-	"Kellner": "waiter",
-	"Kellnerin": [
-		"waitress",
-		"server"
-	],
-	"kennen": [
-		"know",
-		"knew",
-		"meeting"
-	],
-	"Kilo": [
-		"kilos of",
-		"kilo of",
-		"kilos"
-	],
-	"Kilometer": [
-		"kilometers",
-		"kilometer"
-	],
-	"Kind": [
-		"child",
-		"kid"
-	],
-	"Kinder": [
-		"children",
-		"kids",
-		"kids'"
-	],
-	"Kinderbuch": "children's book",
-	"Kino": [
-		"movie theater",
-		"cinema",
-		"movie theatre"
-	],
-	"Kirche": [
-		"church",
-		"kirk"
-	],
-	"Klavier": "piano",
-	"Kleid": "dress",
-	"Kleidung": "clothes",
-	"klein": "small",
-	"klug": "smart",
-	"Knödel": "dumplings",
-	"koche": [
-		"am making",
-		"make",
-		"will cook"
-	],
-	"kochst": [
-		"are boiling",
-		"make",
-		"boil"
-	],
-	"kocht": [
-		"make",
-		"cooks",
-		"is cooking"
-	],
-	"Koffer": [
-		"suitcase",
-		"bag"
-	],
-	"Kollege": "colleague",
-	"Kollegen": [
-		"colleague",
-		"coworkers'",
-		"coworker"
-	],
-	"Kollegin": [
-		"colleague",
-		"coworker"
-	],
-	"komme": [
-		"come",
-		"will come",
-		"am coming"
-	],
-	"kommen": [
-		"arrives",
-		"comes on",
-		"do come"
-	],
-	"kommst": [
-		"come",
-		"are coming",
-		"are"
-	],
-	"kommt": [
-		"is",
-		"is coming",
-		"comes"
-	],
-	"Komödie": "comedy",
-	"Konditorei": "pastry shop",
-	"Konzert": [
-		"concert",
-		"concerto",
-		"show"
-	],
-	"Kopfkissen": "pillow",
-	"Kopfschmerzen": [
-		"headache",
-		"headaches"
-	],
-	"kosten": [
-		"is",
-		"try",
-		"were"
-	],
-	"kostet": [
-		"is",
-		"does cost",
-		"costs"
-	],
-	"krank": "sick",
-	"Krankenhaus": "hospital",
-	"Kreditkarte": "credit card",
-	"Kuchen": "cake",
-	"Kugelschreiber": [
-		"pen",
-		"biro",
-		"ballpoint pen"
-	],
-	"Kunstmuseum": "art museum",
-	"kurz": [
-		"short",
-		"brief"
-	],
-	"Käse": "cheese",
-	"Käsebrot": "cheese sandwich",
-	"können": [
-		"are able to",
-		"knew",
-		"can"
-	],
-	"könnt": [
-		"can",
-		"are able to",
-		"know"
-	],
-	"Küche": "kitchen",
-	"Kühlschrank": [
-		"refrigerator",
-		"fridge",
-		"fridge freezer"
-	],
-	"Künstler": [
-		"an artist",
-		"artists'",
-		"performer"
-	],
-	"L": "large",
-	"lade": [
-		"invite",
-		"charge",
-		"am charging"
-	],
-	"lag": [
-		"lied",
-		"was lying",
-		"lay"
-	],
-	"Lampe": [
-		"lamp",
-		"light"
-	],
-	"lang": "long",
-	"langsam": "slowly",
-	"langweilig": [
-		"boring",
-		"dull",
-		"tedious"
-	],
-	"Laptop": "laptop",
-	"lass uns": [
-		"let's",
-		"let us"
-	],
-	"laufe": [
-		"ice skate",
-		"run",
-		"walking"
-	],
-	"laufen": "run",
-	"laut": [
-		"loud",
-		"noisy",
-		"loudly"
-	],
-	"lebe": [
-		"live",
-		"am living"
-	],
-	"leben": [
-		"lived",
-		"living",
-		"are living"
-	],
-	"Lebenslauf": "resume",
-	"Lebensmittel": "groceries",
-	"lebst": [
-		"live",
-		"living"
-	],
-	"lebt": [
-		"live",
-		"is living",
-		"are living"
-	],
-	"lecker": "delicious",
-	"leer": "empty",
-	"Lehrer": [
-		"teacher",
-		"instructor",
-		"schoolteacher"
-	],
-	"Lehrerin": [
-		"teacher",
-		"a teacher"
-	],
-	"leider": [
-		"unfortunately",
-		"sadly",
-		"regrettably"
-	],
-	"leise": [
-		"quiet",
-		"silent"
-	],
-	"leiser": "quieter",
-	"lerne": [
-		"learn",
-		"am meeting",
-		"study"
-	],
-	"lernen": [
-		"learn",
-		"studies",
-		"study"
-	],
-	"lernst": [
-		"learn",
-		"study",
-		"are studying"
-	],
-	"lernt": [
-		"learns",
-		"is studying",
-		"learn"
-	],
-	"lese": [
-		"am reading",
-		"read",
-		"will read"
-	],
-	"lesen": "read",
-	"Leute": "people",
-	"lieb": "nice",
-	"liebe": "love",
-	"lieben": [
-		"loves",
-		"love",
-		"loved"
-	],
-	"lieber": [
-		"kind",
-		"prefers",
-		"prefer"
-	],
-	"Lieblingsband": "favorite band",
-	"Lieblingsessen": [
-		"favorite food",
-		"favourite food"
-	],
-	"Lieblingsteam": "favorite team",
-	"liebst": "love",
-	"liebt": [
-		"loves",
-		"love"
-	],
-	"lila": [
-		"purple",
-		"lilac"
-	],
-	"links": [
-		"on the left",
-		"left",
-		"to the left"
-	],
-	"Liter": [
-		"liters",
-		"liter",
-		"liters of"
-	],
-	"Luftballons": "balloons",
-	"Lust": [
-		"desire",
-		"in the mood"
-	],
-	"lustig": "funny",
-	"lädst": [
-		"are charging",
-		"charge",
-		"invite"
-	],
-	"läufst": [
-		"are going",
-		"go",
-		"are running"
-	],
-	"läuft": [
-		"is",
-		"walks",
-		"is on"
-	],
-	"mach": [
-		"make",
-		"do",
-		"take"
-	],
-	"mache": [
-		"am turning",
-		"am making",
-		"work"
-	],
-	"machen": [
-		"go on",
-		"makes",
-		"offered"
-	],
-	"machst": [
-		"work",
-		"are doing",
-		"are taking"
-	],
-	"macht": [
-		"is",
-		"comes to",
-		"is making"
-	],
-	"mag": [
-		"like",
-		"likes",
-		"disliked"
-	],
-	"magst": "like",
-	"Mai": "May",
-	"male": [
-		"paint",
-		"am painting",
-		"draw"
-	],
-	"Mallorca": "Mallorca",
-	"malst": [
-		"are painting",
-		"paint"
-	],
-	"malt": [
-		"is drawing",
-		"paints",
-		"draws"
-	],
-	"Mama": [
-		"mom",
-		"to Mom",
-		"mom's"
-	],
-	"manchmal": [
-		"sometimes",
-		"at times"
-	],
-	"Mann": [
-		"husband",
-		"man",
-		"guy"
-	],
-	"Marathon": "Marathon",
-	"Markt": [
-		"market",
-		"marketplace"
-	],
-	"Marktplatz": [
-		"marketplace",
-		"market"
-	],
-	"Maus": "mouse",
-	"Mayo": [
-		"mayo",
-		"mayonnaise"
-	],
-	"Meer": "sea",
-	"mehr": [
-		"more",
-		"anymore",
-		"left"
-	],
-	"Mehrfamilienhaus": [
-		"apartment building",
-		"multi-family residence",
-		"residential building"
-	],
-	"mein": "my",
-	"meine": [
-		"mine",
-		"think",
-		"my"
-	],
-	"meinem": [
-		"my",
-		"to my",
-		"mine"
-	],
-	"meinen": [
-		"mean",
-		"mine",
-		"to my"
-	],
-	"meiner": [
-		"for my",
-		"mine",
-		"to my"
-	],
-	"Metzgerei": "butcher shop",
-	"mich": [
-		"myself",
-		"me",
-		"I"
-	],
-	"Miete": "rent",
-	"Mikrowelle": [
-		"microwave",
-		"microwave oven"
-	],
-	"Milch": "milk",
-	"Mineralwasser": "mineral water",
-	"Minuten": "minutes",
-	"mit": "with",
-	"Mitbewohner": [
-		"roommate",
-		"roomie",
-		"flatmate"
-	],
-	"Mitbewohnerin": [
-		"roommate",
-		"roommate's"
-	],
-	"mitbringen": "bring along",
-	"mitkommen": "come along",
-	"Mittag": "noon",
-	"Mitternacht": "midnight",
-	"Mittwoch": "Wednesday",
-	"modern": "modern",
-	"Moment": "moment",
-	"Monat": "month",
-	"Monate": "months",
-	"Monaten": [
-		"months",
-		"month",
-		"months'"
-	],
-	"Mond": "moon",
-	"Montag": "Monday",
-	"morgen": "tomorrow",
-	"Morgen": "morning",
-	"morgens": [
-		"in the mornings",
-		"in the morning"
-	],
-	"motiviert": "motivated",
-	"Motorrad": [
-		"motorcycle",
-		"motorbike",
-		"bike"
-	],
-	"Museum": "museum",
-	"Musik": "music",
-	"muss": [
-		"needs to",
-		"has to",
-		"has got to"
-	],
-	"musst": [
-		"have got to",
-		"have to",
-		"need to"
-	],
-	"Mutter": "mother",
-	"Muttersprache": [
-		"mother tongue",
-		"native language",
-		"first language"
-	],
-	"Mädchen": "girl",
-	"März": "March",
-	"möchte": [
-		"would like to",
-		"would like"
-	],
-	"möchten": [
-		"would like to",
-		"would like"
-	],
-	"möchtest": [
-		"would like to",
-		"like",
-		"would like"
-	],
-	"möchtet": [
-		"want",
-		"would like to",
-		"like"
-	],
-	"mögen": [
-		"like",
-		"likes",
-		"liked"
-	],
-	"müde": [
-		"tired",
-		"sleepy",
-		"weary"
-	],
-	"München": "Munich",
-	"Müsli": [
-		"muesli",
-		"cereal",
-		"granola"
-	],
-	"müssen": [
-		"have got to",
-		"have to",
-		"need to"
-	],
-	"müsst": [
-		"have to",
-		"need to",
-		"have got to"
-	],
-	"nach": [
-		"for",
-		"about",
-		"to"
-	],
-	"nach Hause": "home",
-	"Nachbar": [
-		"neighbor",
-		"neighbour"
-	],
-	"Nachbarin": [
-		"neighbor",
-		"neighbour"
-	],
-	"Nachbarn": [
-		"neighbor",
-		"neighbors",
-		"neighbors'"
-	],
-	"Nachname": "last name",
-	"Nacht": "night",
-	"Nachtisch": [
-		"dessert",
-		"sweet"
-	],
-	"nachts": [
-		"at night",
-		"at nighttime"
-	],
-	"Name": "name",
-	"nass": "wet",
-	"natürlich": "of course",
-	"neblig": [
-		"foggy",
-		"misty"
-	],
-	"Neffe": "nephew",
-	"nehme": [
-		"will have",
-		"participate",
-		"take"
-	],
-	"nein": "no",
-	"nervös": [
-		"nervous",
-		"on edge",
-		"flustered"
-	],
-	"nett": "nice",
-	"neu": "new",
-	"neun": "nine",
-	"neunundneunzig": "ninety-nine",
-	"neunzehn": "nineteen",
-	"neunzehnten": "nineteenth",
-	"Neuschwanstein": "Neuschwanstein Castle",
-	"nicht": "not",
-	"Nichte": "niece",
-	"nichts": "nothing",
-	"nie": "never",
-	"noch": "still",
-	"November": "November",
-	"Nudeln": [
-		"noodles",
-		"pasta"
-	],
-	"null": "zero",
-	"Nummer": "number",
-	"nur": [
-		"only",
-		"just",
-		"merely"
-	],
-	"Nussallergie": "nut allergy",
-	"nächste": [
-		"next",
-		"closest"
-	],
-	"nächsten": [
-		"next",
-		"closest"
-	],
-	"nächstes": "next",
-	"Nächte": "nights",
-	"Obst": "fruit",
-	"Obstsalat": "fruit salad",
-	"oder": "or",
-	"oft": "often",
-	"oh": [
-		"oh",
-		"aw"
-	],
-	"ohne": "without",
-	"OK": "OK",
-	"Oktober": "October",
-	"Oktoberfest": "Oktoberfest",
-	"Oma": [
-		"grandma",
-		"grandmother",
-		"nan"
-	],
-	"Onkel": "uncle",
-	"Opa": [
-		"grandpa",
-		"grandfather",
-		"granddad"
-	],
-	"Oper": "opera",
-	"Orange": "orange",
-	"Orangen": "oranges",
-	"Orangensaft": "orange juice",
-	"ordentlich": "tidy",
-	"Packung": [
-		"package",
-		"pack",
-		"packet of"
-	],
-	"Packungen": [
-		"packs",
-		"packages"
-	],
-	"Papa": [
-		"dad",
-		"to Dad",
-		"Dad"
-	],
-	"Park": "park",
-	"Parks": "parks",
-	"Partner": [
-		"partner",
-		"partners",
-		"partner's"
-	],
-	"Partnerin": "partner",
-	"Party": "party",
-	"Pass": "passport",
-	"passt": [
-		"fit",
-		"is suitable",
-		"fits"
-	],
-	"Pause": "break",
-	"perfekt": "perfect",
-	"Person": "person",
-	"Pferd": "horse",
-	"Pflanzen": "plants",
-	"Picknick": "picnic",
-	"Pizza": "pizza",
-	"Pizzas": "pizzas",
-	"plane": [
-		"am going to",
-		"planning",
-		"am planning"
-	],
-	"Platz": "space",
-	"Pläne": "plans",
-	"Podcasts": "podcasts",
-	"Polizist": [
-		"police officer",
-		"policeman",
-		"a police officer"
-	],
-	"Polnisch": "Polish",
-	"Pommes": [
-		"fries",
-		"french fries",
-		"chips"
-	],
-	"Popcorn": "popcorn",
-	"Post": "post office",
-	"Praktikum": [
-		"internship",
-		"traineeship",
-		"practicum"
-	],
-	"pro": "per",
-	"Problem": "problem",
-	"Professor": [
-		"professor",
-		"a professor"
-	],
-	"Professorin": [
-		"professor",
-		"a professor"
-	],
-	"prost": "cheers",
-	"Psychologie": "psychology",
-	"Pullover": [
-		"sweater",
-		"jumper"
-	],
-	"putzen": "clean",
-	"putzt": [
-		"cleans",
-		"is cleaning",
-		"cleaning"
-	],
-	"pünktlich": "punctual",
-	"rauchen": [
-		"to smoke",
-		"smoking"
-	],
-	"Rechnung": "check",
-	"Rechnungen": "bills",
-	"rechts": [
-		"on the right",
-		"right",
-		"the right"
-	],
-	"Regal": [
-		"shelf",
-		"rack",
-		"shelving"
-	],
-	"Regenschirm": "umbrella",
-	"regnet": [
-		"rains",
-		"is raining"
-	],
-	"reich": [
-		"rich",
-		"wealthy",
-		"affluent"
-	],
-	"Reis": "rice",
-	"Reise": "trip",
-	"reisen": [
-		"traveling",
-		"travel",
-		"are going"
-	],
-	"Reisezentrum": [
-		"travel center",
-		"travel centre"
-	],
-	"Restaurant": "restaurant",
-	"Restaurants": "restaurants",
-	"Rezeption": [
-		"reception desk",
-		"reception"
-	],
-	"richtig": [
-		"correct",
-		"right",
-		"accurate"
-	],
-	"Riesenrad": "Ferris wheel",
-	"rot": "red",
-	"Rotwein": "red wine",
-	"Rucksack": [
-		"backpack",
-		"rucksack",
-		"knapsack"
-	],
-	"ruf": "call",
-	"rufen": [
-		"calling",
-		"will call",
-		"sends"
-	],
-	"ruhig": [
-		"quiet",
-		"peaceful",
-		"still"
-	],
-	"Russisch": "Russian",
-	"Russland": "Russia",
-	"S": "small",
-	"S-bahn": "light rail",
-	"sah": [
-		"saw",
-		"looked",
-		"watched"
-	],
-	"Sakko": [
-		"suit jacket",
-		"jacket",
-		"sport coat"
-	],
-	"Salat": "salad",
-	"Salz": "salt",
-	"salzig": "salty",
-	"Samstag": "Saturday",
-	"Samstags": "on Saturdays",
-	"Sandalen": "sandals",
-	"Sandwich": "sandwich",
-	"sauber": [
-		"clean",
-		"tidy",
-		"neat"
-	],
-	"Sauerkraut": "sauerkraut",
-	"Schach": "chess",
-	"schade": [
-		"harm",
-		"too bad"
-	],
-	"Schal": [
-		"scarf",
-		"shawl"
-	],
-	"scharf": [
-		"spicy",
-		"sharp",
-		"hot"
-	],
-	"Schatz": [
-		"treasure",
-		"sweetheart",
-		"sweetie"
-	],
-	"Schauspieler": "actor",
-	"Schauspielerin": [
-		"actress",
-		"actor"
-	],
-	"scheint": [
-		"seems to be",
-		"appears",
-		"appear"
-	],
-	"schick": [
-		"stylish",
-		"fashionable",
-		"chic"
-	],
-	"Schildkröte": [
-		"turtle",
-		"tortoise"
-	],
-	"Schinken": "ham",
-	"schlafe": [
-		"sleep",
-		"am asleep",
-		"am sleeping"
-	],
-	"schlafen": "sleep",
-	"Schlafzimmer": "bedroom",
-	"schlecht": [
-		"bad",
-		"ill",
-		"poor"
-	],
-	"schließt": [
-		"is connecting",
-		"shuts",
-		"shut"
-	],
-	"Schloss": [
-		"castle",
-		"palace",
-		"lock"
-	],
-	"schläfst": [
-		"sleep",
-		"sleeping",
-		"are sleeping"
-	],
-	"schläft": [
-		"is sleeping",
-		"sleeping",
-		"sleep"
-	],
-	"Schlüssel": "key",
-	"schmecken": "taste",
-	"schmutzig": [
-		"dirty",
-		"filthy",
-		"grimy"
-	],
-	"Schnecke": [
-		"snail",
-		"slug"
-	],
-	"schneit": [
-		"is snowing",
-		"snows"
-	],
-	"schnell": [
-		"quickly",
-		"rapidly"
-	],
-	"Schnitzel": [
-		"schnitzel",
-		"schnitzels"
-	],
-	"Schokolade": "chocolate",
-	"schon": [
-		"already",
-		"yet"
-	],
-	"Schrank": [
-		"closet",
-		"cabinet",
-		"cupboard"
-	],
-	"Schreibtisch": "desk",
-	"Schuhe": "shoes",
-	"Schule": "school",
-	"schwarz": "black",
-	"Schwarzwald": "Black Forest",
-	"Schweden": "Sweden",
-	"Schwedisch": "Swedish",
-	"schwer": [
-		"difficult",
-		"hard",
-		"tough"
-	],
-	"Schwester": "sister",
-	"Schwimmbad": "swimming pool",
-	"schwimme": [
-		"swim",
-		"am swimming",
-		"swimming"
-	],
-	"schwimmen": [
-		"swim",
-		"to float"
-	],
-	"schwimmst": [
-		"swim",
-		"are floating",
-		"float"
-	],
-	"schwimmt": [
-		"swim",
-		"is swimming",
-		"are floating"
-	],
-	"schön": "beautiful",
-	"Schüler": [
-		"students",
-		"pupil",
-		"student"
-	],
-	"sechs": "six",
-	"sechsunddreißig": "thirty-six",
-	"sechzehn": "sixteen",
-	"sechzig": "sixty",
-	"sehe": [
-		"am watching",
-		"see",
-		"watch"
-	],
-	"sehen": "see",
-	"sehr": "very",
-	"sei": [
-		"be",
-		"was",
-		"keep"
-	],
-	"seid": [
-		"did",
-		"have",
-		"be"
-	],
-	"sein": [
-		"your",
-		"to be",
-		"be"
-	],
-	"seine": [
-		"your",
-		"her",
-		"his"
-	],
-	"seinem": [
-		"her",
-		"one's",
-		"his"
-	],
-	"seinen": [
-		"with their",
-		"her",
-		"their"
-	],
-	"seiner": [
-		"her",
-		"hers",
-		"him"
-	],
-	"Semesterende": "end of the semester",
-	"Senf": "mustard",
-	"September": "September",
-	"Sessel": [
-		"armchair",
-		"reclining chair",
-		"easy chair"
-	],
-	"Sie": [
-		"They",
-		"It",
-		"your"
-	],
-	"sie": "she",
-	"sieben": "seven",
-	"siebenunddreißig": "thirty-seven",
-	"siebten": "seventh",
-	"siebzehn": "seventeen",
-	"siebzig": "seventy",
-	"sind": [
-		"feel",
-		"have",
-		"are"
-	],
-	"singe": [
-		"sing",
-		"am singing"
-	],
-	"singst": [
-		"sing",
-		"are singing"
-	],
-	"singt": [
-		"sings",
-		"sing",
-		"is singing"
-	],
-	"Sitz": [
-		"seat",
-		"place",
-		"chair"
-	],
-	"sitzen": [
-		"are sitting",
-		"sit"
-	],
-	"sitzt": [
-		"is sitting",
-		"sits",
-		"sit"
-	],
-	"so": [
-		"that",
-		"as",
-		"so"
-	],
-	"Socken": "socks",
-	"Sofa": "sofa",
-	"Sohn": "son",
-	"Sommer": "summer",
-	"Sonne": "sun",
-	"Sonnencreme": [
-		"sunscreen",
-		"suntan lotion",
-		"sun cream"
-	],
-	"sonnig": "sunny",
-	"Sonntag": "Sunday",
-	"sonntags": "on Sundays",
-	"Spanisch": "Spanish",
-	"Spaß": "fun",
-	"Speisekarte": "menu",
-	"Speisewagen": [
-		"dining car",
-		"diner car"
-	],
-	"Spiel": [
-		"game",
-		"match",
-		"play"
-	],
-	"Spiele": [
-		"games",
-		"plays",
-		"matches"
-	],
-	"spiele": [
-		"am playing",
-		"play",
-		"playing"
-	],
-	"spielen": [
-		"playing",
-		"are playing",
-		"will play"
-	],
-	"spielst": [
-		"are playing",
-		"playing",
-		"play"
-	],
-	"spielt": [
-		"is",
-		"are playing",
-		"is playing"
-	],
-	"Spinat": "spinach",
-	"Sport": [
-		"sports",
-		"exercise",
-		"sport"
-	],
-	"sportlich": "athletic",
-	"Sprachen": "languages",
-	"spreche": [
-		"am talking",
-		"speak",
-		"pronounce"
-	],
-	"sprechen": [
-		"speak",
-		"are speaking"
-	],
-	"sprichst": [
-		"are speaking",
-		"speak",
-		"talk"
-	],
-	"spricht": [
-		"speaks",
-		"does speak",
-		"speak"
-	],
-	"spät": "late",
-	"später": [
-		"later",
-		"later on"
-	],
-	"Stadion": "stadium",
-	"Stadt": [
-		"city",
-		"town"
-	],
-	"Stadtmuseum": "city museum",
-	"Stadtviertel": [
-		"neighborhood",
-		"neighborhoods"
-	],
-	"Stadtzentrum": "city center",
-	"stark": [
-		"strong",
-		"hard",
-		"harder"
-	],
-	"Station": "station",
-	"stornieren": "cancel",
-	"Strand": [
-		"beach",
-		"shore"
-	],
-	"Straße": [
-		"street",
-		"road"
-	],
-	"Straßen": "streets",
-	"stressig": "stressful",
-	"Student": [
-		"college student",
-		"university student",
-		"student"
-	],
-	"Studenten": [
-		"students",
-		"student"
-	],
-	"Studentin": [
-		"a student",
-		"college student",
-		"student"
-	],
-	"studieren": [
-		"study",
-		"are studying",
-		"have studied"
-	],
-	"Stuhl": "chair",
-	"Stunde": "hour",
-	"Stunden": [
-		"lessons",
-		"hours",
-		"classes"
-	],
-	"Stück": "piece",
-	"Stühle": "chairs",
-	"suche": [
-		"am looking for",
-		"look for",
-		"seek"
-	],
-	"super": [
-		"super",
-		"great",
-		"fantastic"
-	],
-	"Supermarkt": [
-		"supermarket",
-		"grocery store"
-	],
-	"Suppe": "soup",
-	"surfe": [
-		"surf",
-		"go surfing"
-	],
-	"surfen": [
-		"surf",
-		"surfing"
-	],
-	"surfst": [
-		"surf",
-		"go surfing"
-	],
-	"surft": [
-		"goes surfing",
-		"is surfing",
-		"surfs"
-	],
-	"süß": [
-		"sweet",
-		"cute"
-	],
-	"T-shirt": "T-shirt",
-	"Tablette": [
-		"pill",
-		"tablet"
-	],
-	"Tag": "day",
-	"Tante": [
-		"aunt",
-		"auntie",
-		"aunty"
-	],
-	"tanze": [
-		"dance",
-		"am dancing"
-	],
-	"tanzen": "dance",
-	"tanzt": [
-		"is dancing",
-		"are dancing",
-		"dances"
-	],
-	"Tasche": "bag",
-	"Tasse": [
-		"cup",
-		"mug"
-	],
-	"Tassen": [
-		"cups",
-		"mugs"
-	],
-	"Taxi": "taxi",
-	"Taxifahrt": [
-		"taxi ride",
-		"cab ride"
-	],
-	"Taxistand": "taxi stand",
-	"Tee": "tea",
-	"Teller": [
-		"plates",
-		"plate"
-	],
-	"Tennis": "tennis",
-	"Teppich": [
-		"carpet",
-		"rug"
-	],
-	"Termin": [
-		"appointment",
-		"date",
-		"deadline"
-	],
-	"teuer": [
-		"expensive",
-		"costly",
-		"dear"
-	],
-	"Theater": "theater",
-	"Tisch": [
-		"table",
-		"desk"
-	],
-	"Tochter": "daughter",
-	"Toiletten": [
-		"toilets",
-		"bathrooms",
-		"restrooms"
-	],
-	"toll": [
-		"great",
-		"awesome",
-		"terrific"
-	],
-	"Tomaten": "tomatoes",
-	"Touristen": "tourists",
-	"trage": [
-		"am wearing",
-		"am carrying",
-		"wear"
-	],
-	"traurig": [
-		"sad",
-		"unhappy"
-	],
-	"treffe": [
-		"am meeting",
-		"meeting",
-		"meet"
-	],
-	"treffen": [
-		"are meeting",
-		"join",
-		"meeting"
-	],
-	"Treppe": [
-		"stairs",
-		"steps",
-		"staircase"
-	],
-	"triffst": [
-		"join",
-		"meet",
-		"hit"
-	],
-	"trifft": [
-		"is meeting",
-		"join",
-		"meeting"
-	],
-	"trink": "drink",
-	"trinke": [
-		"drink",
-		"am drinking"
-	],
-	"trinken": "drink",
-	"tschüss": "bye",
-	"Turnschuhe": "gym shoes",
-	"Tür": [
-		"door",
-		"doorway"
-	],
-	"Türkisch": "Turkish",
-	"Tüte": "bag",
-	"Tüten": "bags",
-	"U-bahn": "subway",
-	"U-Bahnstation": "subway station",
-	"Uhr": [
-		"watch",
-		"clock",
-		"o'clock"
-	],
-	"um": [
-		"for",
-		"to",
-		"of"
-	],
-	"und": "and",
-	"unhöflich": "rude",
-	"Universität": [
-		"university",
-		"uni",
-		"college"
-	],
-	"unordentlich": "messy",
-	"uns": "us",
-	"unser": "our",
-	"unsere": [
-		"our",
-		"ours"
-	],
-	"unten": "downstairs",
-	"unterschreiben": "sign",
-	"Urlaub": [
-		"vacation",
-		"a vacation",
-		"holidays"
-	],
-	"Vase": "vase",
-	"Vater": "father",
-	"verboten": [
-		"prohibited",
-		"forbidden",
-		"not allowed"
-	],
-	"vergiss": "forget",
-	"verheiratet": "married",
-	"Verspätung": "delay",
-	"Verwandten": "relatives",
-	"verärgert": "angry",
-	"Videospiele": "video games",
-	"viel": "much",
-	"viele": [
-		"many",
-		"a lot of",
-		"lots of"
-	],
-	"vielen Dank": "thank you very much",
-	"vielleicht": [
-		"maybe",
-		"perhaps"
-	],
-	"vier": "four",
-	"Viertel": "quarter",
-	"vierten": [
-		"fourth",
-		"4th"
-	],
-	"vierzehn": [
-		"fourteen",
-		"14"
-	],
-	"vierzig": "forty",
-	"Visum": "visa",
-	"voll": "full",
-	"Volleyball": "volleyball",
-	"von": [
-		"from",
-		"'s",
-		"on"
-	],
-	"vor": [
-		"to",
-		"in front of",
-		"of"
-	],
-	"Vorname": "first name",
-	"Wald": [
-		"forest",
-		"wood",
-		"woods"
-	],
-	"wandere": [
-		"am hiking",
-		"go hiking",
-		"hike"
-	],
-	"wandern": [
-		"traveling",
-		"hiking",
-		"hike"
-	],
-	"wanderst": [
-		"hiking",
-		"hike",
-		"go hiking"
-	],
-	"wandert": [
-		"hike",
-		"hikes",
-		"hiking"
-	],
-	"wann": [
-		"when",
-		"what time",
-		"at what time"
-	],
-	"warm": "warm",
-	"warten": [
-		"hold on",
-		"have been",
-		"wait"
-	],
-	"warum": "why",
-	"was": "what",
-	"was für": "what kind of",
-	"waschen": "wash",
-	"Wasser": "water",
-	"Wasserflasche": "water bottle",
-	"weich": [
-		"soft",
-		"squishy"
-	],
-	"Wein": "wine",
-	"weit weg": [
-		"far away",
-		"far"
-	],
-	"weiß": "white",
-	"Weißbier": "wheat beer",
-	"Weißwein": "white wine",
-	"welche": "which",
-	"welchen": [
-		"which",
-		"what"
-	],
-	"welches": "which",
-	"wem": [
-		"whom",
-		"who",
-		"anybody"
-	],
-	"wen": [
-		"whom",
-		"who",
-		"to whom"
-	],
-	"wenig": "a little",
-	"weniger": [
-		"less",
-		"fewer"
-	],
-	"wer": "who",
-	"Wetter": "weather",
-	"wichtig": "important",
-	"wie": [
-		"as",
-		"such",
-		"like"
-	],
-	"wie geht's": "how are you?",
-	"wie lange": "how long",
-	"wie oft": "how often",
-	"wie viel Uhr": "what time",
-	"wieder": [
-		"again",
-		"back"
-	],
-	"wiederholen": "repeat",
-	"wiederkommen": "come back",
-	"Wien": "Vienna",
-	"Wiesn-Herz": "heart cookie",
-	"will": [
-		"wants",
-		"wants to",
-		"want"
-	],
-	"willkommen": "welcome",
-	"willst": [
-		"want",
-		"want to"
-	],
-	"windig": "windy",
-	"Winter": [
-		"winters",
-		"winter"
-	],
-	"wir": "we",
-	"wirklich": [
-		"really",
-		"actually",
-		"truly"
-	],
-	"wo": "where",
-	"Woche": "week",
-	"Wochen": "weeks",
-	"Wochenende": "weekend",
-	"woher": [
-		"where",
-		"from",
-		"where from"
-	],
-	"wohin": [
-		"where to",
-		"where"
-	],
-	"wohnen": [
-		"live",
-		"lived",
-		"are living"
-	],
-	"Wohnung": [
-		"apartment",
-		"flat"
-	],
-	"Wohnungen": "apartments",
-	"Wohnzimmer": [
-		"living room",
-		"lounge",
-		"sitting room"
-	],
-	"wollen": [
-		"want",
-		"want to",
-		"won't"
-	],
-	"wollt": [
-		"want",
-		"wish",
-		"will"
-	],
-	"wunderbar": [
-		"wonderful",
-		"splendid",
-		"excellent"
-	],
-	"Wurst": "sausage",
-	"Wörterbuch": [
-		"dictionary",
-		"wordbook"
-	],
-	"Yoga": "yoga",
-	"zahl": "pay",
-	"zahlen": [
-		"pay",
-		"to pay",
-		"are paying"
-	],
-	"Zahnschmerzen": "toothache",
-	"zehn": "ten",
-	"zehnten": "tenth",
-	"Zeit": "time",
-	"Zeitung": "newspaper",
-	"Zimmer": "room",
-	"Zoll": [
-		"customs",
-		"customs office"
-	],
-	"Zoo": "zoo",
-	"zu": [
-		"with",
-		"for",
-		"too"
-	],
-	"zu Fuß": [
-		"by foot",
-		"on foot"
-	],
-	"zu Hause": [
-		"at home",
-		"home"
-	],
-	"Zucker": "sugar",
-	"zuerst": "first",
-	"zufrieden": [
-		"content",
-		"satisfied",
-		"pleased"
-	],
-	"Zug": "train",
-	"Zugtür": "train door",
-	"zum": [
-		"with the",
-		"to the",
-		"with"
-	],
-	"zum Abendessen": [
-		"to dinner",
-		"for dinner"
-	],
-	"zum Frühstück": "for breakfast",
-	"zum Mittagessen": "for lunch",
-	"zum Oktoberfest": "to Oktoberfest",
-	"zum Schalter": "to counter",
-	"zum Strand": "to the beach",
-	"zur": [
-		"on",
-		"with the",
-		"to the"
-	],
-	"zurzeit": [
-		"currently",
-		"at the moment"
-	],
-	"zusammen": "together",
-	"zwanzig": [
-		"twenty",
-		"20"
-	],
-	"zwei": "two",
-	"zweihundert": "two hundred",
-	"zweiten": [
-		"second",
-		"2nd"
-	],
-	"zweiundzwanzig": "twenty-two",
-	"zwölf": "twelve",
-	"Zürich": "Zurich",
-	"Äpfel": "apples",
-	"Ärztin": [
-		"doctor",
-		"a doctor"
-	],
-	"öffnen": [
-		"open",
-		"open up",
-		"opening"
-	],
-	"Österreich": "Austria"
+   "a": ["A", "\u2245 M"],
+   "ab": ["starting", "off", "up"],
+   "Abend": "evening",
+   "Abendessen": "dinner",
+   "abends": ["in the evenings", "in the evening"],
+   "aber": ["but", "however"],
+   "Abfahrt": "departure",
+   "Abflug": "departure",
+   "abgewaschen": ["did the dishes", "washed"],
+   "abholen": "pick up",
+   "Abschluss": "degree",
+   "abwaschen": ["do the dishes", "wash", "washing"],
+   "ach": "oh",
+   "acht": "eight",
+   "achtunddrei\u00dfig": "thirty-eight",
+   "Achtung": ["careful", "attention", "watch out"],
+   "achtzehn": "eighteen",
+   "achtzehnten": "eighteenth",
+   "achtzig": "eighty",
+   "Adresse": "address",
+   "Affe": "monkey",
+   "Affen": ["monkey", "monkeys"],
+   "Ahnung": "idea",
+   "Aktentasche": "briefcase",
+   "aktiv": ["active", "actively"],
+   "Aktivit\u00e4ten": "activities",
+   "Album": ["album", "albums"],
+   "Alkohol": "alcohol",
+   "alle": "everybody",
+   "allein": "alone",
+   "alles": ["everything", "all"],
+   "alles Gute": ["take care", "all the best", "take"],
+   "Alpen": "Alps",
+   "als": ["as", "as a", "the last time"],
+   "also": "so",
+   "alt": "old",
+   "alte": ["old one", "old", "ancient"],
+   "alten": ["old", "old ones", "ancient"],
+   "am": ["by the", "the", "a"],
+   "am besten": ["the best", "best"],
+   "am schlechtesten": ["worst", "the worst"],
+   "am See": "at the lake",
+   "am Strand": ["on the beach", "at the beach"],
+   "am Telefon": "on the phone",
+   "am teuersten": "the most expensive",
+   "am Wochenende": "on the weekend",
+   "Amerika": "America",
+   "Amerikaner": "American",
+   "Amerikanerin": "American",
+   "an": ["around", "wearing", "in line"],
+   "Ananas": "pineapple",
+   "anbieten": ["offer", "offered"],
+   "andere": ["other", "another", "different"],
+   "anfangen": "start",
+   "angenehm": ["pleasant", "agreeably", "pleasantly"],
+   "Angst": "fear",
+   "ankommen": ["arriving", "get", "gets"],
+   "annehmen": "accept",
+   "anprobieren": "try on",
+   "anrufen": "call",
+   "anstrengend": "exhausting",
+   "antworten": ["answer", "are answering", "talking"],
+   "Anwalt": ["lawyer", "barrister", "solicitor"],
+   "Anw\u00e4ltin": ["lawyer", "a lawyer"],
+   "Anzug": "suit",
+   "Anz\u00fcge": "suits",
+   "Apfel": "apple",
+   "Apfelkuchen": ["apple cake", "apple pie"],
+   "Apfelsaft": "apple juice",
+   "Apfelschorle": ["sparkling apple juice", "carbonated apple juice", "apple juice spritzer"],
+   "Apfelstrudel": "apple strudel",
+   "Apotheke": ["pharmacy", "drugstore", "chemist"],
+   "April": "April",
+   "Arbeit": ["work", "piece of work", "job"],
+   "arbeite": ["am working", "work", "have been working"],
+   "arbeiten": "work",
+   "arbeitest": ["work", "are working", "working"],
+   "arbeitet": ["work", "works", "are working"],
+   "arbeitslos": ["unemployed", "jobless", "out of work"],
+   "Arbeitszimmer": "home office",
+   "Arm": "arm",
+   "Arme": ["arms", "poor"],
+   "Arzt": ["doctor", "physician"],
+   "au": ["ow", "oh", "ouch"],
+   "auch": ["also", "as well", "too"],
+   "auf": ["on to", "on top of", "onto"],
+   "auf jeden Fall": "definitely",
+   "auf Wiedersehen": "goodbye",
+   "aufgeben": ["give up", "checks", "dropped"],
+   "aufgemacht": ["opened", "open"],
+   "aufgeregt": ["excited", "eager", "jumpy"],
+   "aufgestanden": ["stood up", "gotten up", "risen"],
+   "aufh\u00f6ren": "end",
+   "aufmachen": "open",
+   "aufpassen": "look after",
+   "aufregend": ["exciting", "thrilling"],
+   "aufregender": "more exciting",
+   "aufr\u00e4umen": "tidy up",
+   "aufstehe": "get up",
+   "aufstehen": "get up",
+   "Aufzug": ["elevator", "lift"],
+   "Auge": "eye",
+   "Augen": "eyes",
+   "August": "August",
+   "aus": ["made of", "out", "off"],
+   "Ausbildung": "apprenticeship",
+   "Ausflug": "excursion",
+   "ausf\u00fcllen": "fill out",
+   "ausgef\u00fcllt": ["fill out", "filled out"],
+   "ausgegangen": ["dead", "run", "faded"],
+   "ausgehen": "go out",
+   "ausgepackt": ["unpacked", "unpack"],
+   "ausmachen": ["is", "made", "mind"],
+   "auspacken": "unpack",
+   "Ausrede": "excuse",
+   "ausschlafe": "sleep in",
+   "ausschlafen": "sleep in",
+   "Ausstellung": "exhibit",
+   "ausverkauft": "sold out",
+   "Ausweis": ["ID card", "ID", "identification card"],
+   "Auto": ["car", "auto", "automobile"],
+   "Autos": ["cars", "car"],
+   "Baby": "baby",
+   "backen": ["bakes", "baked", "making"],
+   "Backwaren": "baked goods",
+   "Badeanzug": "swimsuit",
+   "baden": ["[seaside] resort", "swimming bath", "bathrooms"],
+   "Badewanne": "bathtub",
+   "Badezimmer": ["bathroom", "restroom", "washroom"],
+   "Bahnhof": ["train station", "railway station", "rail station"],
+   "bald": "soon",
+   "Balkon": "balcony",
+   "Banane": "banana",
+   "Bananen": "bananas",
+   "Band": "band",
+   "Bank": ["bench", "bank"],
+   "Bankkauffrau": ["banker", "a banker"],
+   "Bankkaufmann": "banker",
+   "Bar": "bar",
+   "bar": ["cash", "in cash"],
+   "Bargeld": "cash",
+   "Bars": "bars",
+   "Bart": "beard",
+   "Basketball": "basketball",
+   "Basketballspiel": "basketball game",
+   "basteln": ["are doing arts and crafts", "do arts and crafts", "makes"],
+   "Bauchschmerzen": ["stomachache", "tummyache"],
+   "bauen": ["are building", "build", "building"],
+   "Bauer": "farmer",
+   "Bauernhof": "farm",
+   "Baum": "tree",
+   "Beamter": ["civil servant", "public official", "official"],
+   "Beamtin": ["civil servant", "public official", "official"],
+   "beantworten": ["answer", "are answering", "will answer"],
+   "Becher": "mug",
+   "bedeutet": ["mean", "means", "is meaning"],
+   "beginnt": ["begin", "is starting", "start"],
+   "bei": ["with", "near", "at"],
+   "bei sch\u00f6nem Wetter": "during nice weather",
+   "beide": "both",
+   "Beine": "legs",
+   "bekannt": "well-known",
+   "bekommt": ["is getting", "getting", "get"],
+   "belegen": ["are taking", "take", "offered"],
+   "beliebt": ["popular", "well-liked"],
+   "benutzen": ["are using", "use", "used"],
+   "Benzin": "gas",
+   "bequem": ["comfortable", "comfortably"],
+   "Berge": "mountains",
+   "Bergen": "mountains",
+   "Beruf": ["profession", "job", "occupation"],
+   "ber\u00fchmt": "famous",
+   "besichtigen": ["are touring", "saw", "tour"],
+   "besichtigt": ["tour", "toured"],
+   "besonders": "especially",
+   "besser": "better",
+   "bestanden": ["pass", "passed", "have passed"],
+   "bestehen": ["are", "is", "pass"],
+   "bestellen": "order",
+   "Bestellung": "order",
+   "Besuch": ["visit", "visitors"],
+   "besuchen": "visit",
+   "besucht": ["attended", "is visiting", "are visiting"],
+   "Bett": "bed",
+   "Bettdecke": ["bedspread", "blanket", "bed blanket"],
+   "Betten": "beds",
+   "Bettlaken": "bed sheets",
+   "bew\u00f6lkt": "cloudy",
+   "bezahlen": ["pay", "are paying for", "are paying"],
+   "bezahlt": ["pay", "pays", "paid"],
+   "Bibliothek": "library",
+   "Bier": "beer",
+   "Biergarten": "beer garden",
+   "Bierkrug": "beer mug",
+   "bieten": ["offered", "are offering", "offer"],
+   "Bild": ["painting", "picture", "photo"],
+   "Bildschirm": "monitor",
+   "billig": ["cheap", "inexpensive"],
+   "billiger": "cheaper",
+   "bin": ["am", "will be", "feel"],
+   "Biogurken": "organic cucumbers",
+   "Bioladen": "health food store",
+   "Biologie": "biology",
+   "bis": ["until", "till", "'til"],
+   "bis bald": "see you soon",
+   "bis morgen": "see you tomorrow",
+   "bis sp\u00e4ter": "see you later",
+   "bis zum Hotel": "to the hotel",
+   "bist": ["are", "have been", "were"],
+   "Bitte": "request",
+   "bitte": "please",
+   "blass": "pale",
+   "blaue": "blue",
+   "bleiben": ["stay", "being", "stopped"],
+   "Bleistift": "pencil",
+   "Blick": ["view", "look"],
+   "blond": "blonde",
+   "Blumen": "flowers",
+   "Blumenladen": "florist",
+   "Bluse": ["blouse", "shirt", "top"],
+   "Boden": "floor",
+   "Bohnen": ["beans", "of beans"],
+   "Boot": "boat",
+   "Brandenburger Tor": "Brandenburg Gate",
+   "brauchen": ["need", "do need"],
+   "brauchst": ["need", "use"],
+   "braun": "brown",
+   "braune": "brown",
+   "brav": ["well-behaved", "good"],
+   "Brezel": "pretzel",
+   "Brief": "letter",
+   "Briefmarke": "stamp",
+   "Briefmarken": "stamps",
+   "Briefumschlag": "envelope",
+   "Brille": ["glasses", "spectacles", "eyeglasses"],
+   "bring": ["bring", "take"],
+   "bringe": ["take", "am taking", "bring"],
+   "bringen": ["are bringing", "take", "is bringing"],
+   "bringst": ["are bringing", "bring"],
+   "Brot": "bread",
+   "Bruder": "brother",
+   "Br\u00f6tchen": ["roll", "bread roll", "bun"],
+   "Br\u00fccke": "bridge",
+   "Br\u00fccken": "bridges",
+   "Br\u00fcder": ["brothers", "brothers'"],
+   "Buch": "book",
+   "Buchladen": ["bookstore", "bookshop"],
+   "buchstabieren": "spell",
+   "Burger": ["burger", "burgers"],
+   "Bus": "bus",
+   "Bushaltestelle": "bus stop",
+   "Butter": "butter",
+   "BWL": "business",
+   "B\u00e4ckerei": ["bakery", "baker's"],
+   "B\u00e4r": "bear",
+   "B\u00e4ren": ["bear", "bears"],
+   "B\u00e4uerin": "farmer",
+   "B\u00e4ume": "trees",
+   "B\u00fccher": "books",
+   "B\u00fccherei": "library",
+   "B\u00fccherregal": ["bookcase", "bookshelf"],
+   "B\u00fchne": "stage",
+   "B\u00fcro": "office",
+   "B\u00fcros": ["offices", "office"],
+   "Caf\u00e9": ["coffee shop", "cafe", "coffeehouse"],
+   "Caf\u00e9s": ["coffee shops", "caf\u00e9s"],
+   "campe": ["am camping", "go camping", "camp"],
+   "Campus": "campus",
+   "Cent": ["cents", "cent"],
+   "Chor": "choir",
+   "circa": "approximately",
+   "Clown": "clown",
+   "Club": ["club", "clubs"],
+   "Cola": "cola",
+   "Comics": "comics",
+   "Computer": ["computers", "computer"],
+   "cool": "cool",
+   "cooler": ["cooler", "cool"],
+   "coolsten": "coolest",
+   "Couch": "couch",
+   "Cousin": "cousin",
+   "Cousine": "cousin",
+   "Currywurst": ["curry sausage", "currywurst", "curried sausage"],
+   "da": ["there", "because", "here"],
+   "da dr\u00fcben": "over there",
+   "damals": "back then",
+   "Damen": "ladies",
+   "danke": "thank you",
+   "danke sch\u00f6n": ["thank you very much", "thank you"],
+   "danken": ["thank", "are thanking"],
+   "dann": "then",
+   "das": ["that", "this", "so"],
+   "dass": ["that", "for", "who"],
+   "Date": "date",
+   "dauert": ["lasts", "takes", "does last"],
+   "Decke": "blanket",
+   "dein": "your",
+   "deine": ["your", "yours"],
+   "deinem": ["your", "of you", "yours"],
+   "deinen": ["your", "to your", "for your"],
+   "deiner": ["your", "of you", "of your"],
+   "dem": ["with the", "to the", "the"],
+   "den": ["her", "the", "that"],
+   "den ganzen Tag": ["the whole day", "all day"],
+   "denken": ["are thinking", "think", "thinking"],
+   "denn": ["because", "for"],
+   "deprimiert": "depressed",
+   "der": ["this", "to the", "of the"],
+   "Deutsch": "German",
+   "Deutsche": ["German", "a German", "Germans"],
+   "Deutscher": "German",
+   "Deutschland": "Germany",
+   "Dezember": "December",
+   "dich": ["you", "yourself"],
+   "die": ["this", "the", "that"],
+   "die ganze Zeit": ["all the time", "the whole time"],
+   "Dienstag": "Tuesday",
+   "diese": ["this one", "this", "that"],
+   "diesem": ["this", "which", "these"],
+   "diesen": ["this", "that", "these"],
+   "dieser": "this",
+   "dieses": ["this", "of this", "these"],
+   "dir": ["of you", "you", "to you"],
+   "direkt": ["directly", "direct", "right"],
+   "Dokufilme": "documentaries",
+   "Dokumente": "documents",
+   "Dollar": ["dollar", "dollars"],
+   "Dom": "cathedral",
+   "Donnerstag": "Thursday",
+   "Doppelzimmer": "double room",
+   "Dorf": ["village", "town", "small town"],
+   "dort": "there",
+   "Dose": "can",
+   "Dosen": ["cans", "cans of"],
+   "drau\u00dfen": "outside",
+   "drei": "three",
+   "dreihundert": "three hundred",
+   "dreizehn": ["thirteen", "13"],
+   "dreizehnten": "thirteenth",
+   "drei\u00dfig": ["thirty", "30"],
+   "drinnen": "inside",
+   "dritten": "third",
+   "Drogeriemarkt": "drug store",
+   "Drucker": "printer",
+   "du": "you",
+   "dunkel": "dark",
+   "durch": "through",
+   "Durst": ["thirst", "thirsty"],
+   "Dusche": "shower",
+   "duschen": ["showers", "shower"],
+   "D\u00f6ner": ["doner kebab", "kebab"],
+   "d\u00fcnn": ["thin", "slim", "smallest"],
+   "E-Mail": ["e-mail", "email"],
+   "E-Mail-Adresse": "e-mail address",
+   "EC-Karte": "debit card",
+   "echt": "really",
+   "Ecke": "corner",
+   "egal": "it doesn't matter",
+   "eh": ["in any case", "hey", "anyway"],
+   "ehe": ["anyways", "in any case", "marriage"],
+   "Ehefrau": "wife",
+   "Ehemann": "husband",
+   "Ei": "egg",
+   "Eier": "eggs",
+   "eigentlich": "actually",
+   "ein": ["a", "one", "submit"],
+   "ein paar": "a few",
+   "eine": ["an", "a", "one"],
+   "eineinhalb": "one and a half",
+   "einem": ["a", "to a", "one"],
+   "einen": ["an", "a", "one"],
+   "einen sch\u00f6nen Tag noch": "have a nice day",
+   "einer": ["any", "an", "a"],
+   "eines Tages": "one day",
+   "einfach": ["easy", "simple"],
+   "einfacher": "easier",
+   "einhundert": "one hundred",
+   "einkaufen": "to shop",
+   "Einkaufszentrum": "shopping mall",
+   "einladen": "invite",
+   "Einladung": "invitation",
+   "einmal": "once",
+   "einpacken": "pack",
+   "eins": "one",
+   "einschlafen": "fall asleep",
+   "Eintrittskarte": ["admission ticket", "[admission/entry/entrance] [ticket/pass/card]"],
+   "Eintrittskarten": ["admission tickets", "tickets"],
+   "einundzwanzig": "twenty-one",
+   "einverstanden": ["agreed", "disagreed"],
+   "Einweihungsparty": "housewarming party",
+   "Einzelzimmer": "single room",
+   "eis": ["ice skate", "ice skates"],
+   "Eis": ["ice cream", "ice"],
+   "Eiskaffee": ["ice cream coffee", "coffee with ice cream", "iced coffeee"],
+   "eiskalt": ["freezing", "coldest"],
+   "eislaufe": "ice skate",
+   "eisl\u00e4ufst": "ice skate",
+   "eisl\u00e4uft": "ice skates",
+   "Elefant": "elephant",
+   "Elefanten": ["elephant", "elephants"],
+   "elegant": "elegant",
+   "elf": ["eleven", "11"],
+   "elften": "eleventh",
+   "Eltern": "parents",
+   "endet": ["finishes", "ends", "finish"],
+   "endlich": "finally",
+   "eng": "tight",
+   "Englisch": "English",
+   "Entschuldigung": ["sorry", "excuse me", "apologies"],
+   "er": ["it's", "he's", "him"],
+   "Erdbeeren": "strawberries",
+   "Erdkunde": "geography",
+   "Erk\u00e4ltung": ["cold", "coldest", "colds"],
+   "erlaubt": "permitted",
+   "ersten": "first",
+   "Erwachsene": ["adult", "adults"],
+   "erz\u00e4hlen": ["tell", "are telling", "saying"],
+   "er\u00f6ffnen": "open",
+   "es": "it",
+   "es geht": "I'm all right",
+   "es gibt": ["there are", "there is", "there's"],
+   "es tut mir leid": "I am sorry",
+   "esse": ["am eating", "am having", "have"],
+   "essen": "eat",
+   "Essen": "food",
+   "Essig": "vinegar",
+   "Esszimmer": "dining room",
+   "etwas": "something",
+   "euch": ["you", "your"],
+   "euer": ["your", "yours"],
+   "Eule": "owl",
+   "eure": ["your", "yours"],
+   "eurem": ["your", "to your"],
+   "euren": ["your", "yours", "to your"],
+   "eurer": ["your", "yours", "to your"],
+   "Euro": ["euros", "euro"],
+   "Fach": "subject",
+   "fahr": ["drive", "go"],
+   "fahre": ["am traveling", "am going", "traveling"],
+   "fahren": ["are riding", "are departing", "run"],
+   "Fahrkarte": "ticket",
+   "Fahrkarten": "tickets",
+   "Fahrrad": "bicycle",
+   "Fahrradfahren": ["riding a bike", "bike riding", "biking"],
+   "Fahrradhelm": "bicycle helmet",
+   "Fahrr\u00e4der": ["bicycles", "bikes"],
+   "Fahrt": "trip",
+   "fahrt": ["travel", "drive", "go"],
+   "fair": "fair",
+   "Familie": "family",
+   "fantastisch": ["fantastic", "great", "terrific"],
+   "Farbe": ["color", "paint"],
+   "Farbstifte": "colored pencils",
+   "fast": ["almost", "nearly"],
+   "faul": "lazy",
+   "Februar": "February",
+   "Federball": "badminton",
+   "Feierabend": "end of the workday",
+   "feiern": ["celebrate", "are celebrating", "celebrating"],
+   "feiert": ["celebrate", "celebrates", "is celebrating"],
+   "Feiertag": ["holiday", "bank holiday", "public holiday"],
+   "Fenster": "window",
+   "Ferien": ["vacations", "break", "holidays"],
+   "fern": ["away", "far", "TV"],
+   "Fernsehen": ["TV", "television", "watching TV"],
+   "fernsehen": "watch TV",
+   "Fernseher": ["TV", "TV set", "television"],
+   "Fernsehserien": "TV shows",
+   "fertig": "finished",
+   "Fest": "festival",
+   "Fieber": "fever",
+   "Film": ["movie", "film"],
+   "Filme": ["movies", "films"],
+   "Filmen": ["movies", "are filming"],
+   "Filmstar": "movie star",
+   "finden": "find",
+   "Firma": "company",
+   "Fisch": "fish",
+   "fischen": ["fish", "fishing"],
+   "fit": ["in shape", "fit"],
+   "Fitnessstudio": ["gym", "health club", "exercise centre"],
+   "fix und fertig": "done",
+   "flach": "flat",
+   "Flasche": "bottle",
+   "Flaschen": ["bottles", "bottles of"],
+   "Fleisch": "meat",
+   "flei\u00dfig": ["hard-working", "diligent", "hardworking"],
+   "fliegen": ["are flying", "fly", "flying"],
+   "Flohmarkt": "flea market",
+   "Flug": "flight",
+   "Flughafen": "airport",
+   "Flugnummer": "flight number",
+   "Flugzeug": "airplane",
+   "Fluss": "river",
+   "Formular": ["form", "questionnaire"],
+   "Formulare": "forms",
+   "fotografiere": ["take photos", "take pictures"],
+   "fotografieren": ["take photos of", "take photos", "take a photo of"],
+   "Fotos": ["photos", "pictures", "photo"],
+   "Frage": "question",
+   "fragen": ["are asking", "ask", "asking"],
+   "Fragen": ["ask", "questions"],
+   "Frankreich": "France",
+   "Franz\u00f6sisch": "French",
+   "Frau": ["woman", "wife", "Ms."],
+   "frech": "sassy",
+   "frei": ["free", "available"],
+   "Freiburg": "Freiburg",
+   "Freitag": "Friday",
+   "freitags": "on Fridays",
+   "Freizeit": ["free time", "leisure time", "spare time"],
+   "freuen": ["are happy", "are pleased", "please"],
+   "Freund": ["boyfriend", "partner"],
+   "Freunde": ["friends", "friends'"],
+   "Freunden": "friends",
+   "Freundin": ["girlfriend", "friend", "friend's"],
+   "Freundinnen": ["friends", "girlfriends"],
+   "freundlich": "friendly",
+   "freut mich": ["nice to meet you", "nice"],
+   "frisch": "fresh",
+   "Friseur": ["hairstylist", "barber", "hairdresser"],
+   "Friseurin": ["hairdresser", "hairstylist"],
+   "froh": "glad",
+   "fr\u00fch": "early",
+   "fr\u00fcher": "earlier",
+   "Fr\u00fchling": ["spring", "springtime"],
+   "Fr\u00fchst\u00fcck": "breakfast",
+   "fr\u00fchst\u00fccke": ["eat breakfast", "am eating breakfast"],
+   "fr\u00fchst\u00fccken": ["are eating breakfast", "eat breakfast"],
+   "fr\u00fchst\u00fcckst": ["are eating breakfast", "eat breakfast"],
+   "fr\u00fchst\u00fcckt": ["are eating breakfast", "eats breakfast", "is eating breakfast"],
+   "funktioniert": ["work", "works", "is working"],
+   "furchtbar": "terrible",
+   "Fu\u00df": "foot",
+   "Fu\u00dfball": ["soccer", "football"],
+   "Fu\u00dfballspiel": "soccer game",
+   "Fu\u00dfballspielen": "playing soccer",
+   "Fu\u00dfballtraining": "soccer practice",
+   "f\u00e4hrst": ["are riding", "drive", "go"],
+   "f\u00e4hrt": ["driving", "is driving", "riding"],
+   "f\u00e4llt": ["fall", "is falling", "cases"],
+   "f\u00e4ngt": ["fields", "catches", "catch"],
+   "f\u00fchlen": ["feel", "take", "felt"],
+   "F\u00fchrerschein": "driver's license",
+   "f\u00fcllen": ["fills", "filling", "fill"],
+   "f\u00fcnf": "five",
+   "f\u00fcnftausend": "five thousand",
+   "f\u00fcnfunddrei\u00dfig": ["thirty-five", "35"],
+   "f\u00fcnfundvierzig": "forty-five",
+   "f\u00fcnfundzwanzig": ["twenty-five", "25"],
+   "f\u00fcnfzehn": ["fifteen", "15"],
+   "f\u00fcnfzig": "fifty",
+   "f\u00fcr": "for",
+   "f\u00fcttern": ["are feeding", "feed", "feeding"],
+   "Gabel": "fork",
+   "Gans": "goose",
+   "ganz": ["all", "absolutely", "really"],
+   "ganz bestimmt": "definitely",
+   "gar nicht": "not at all",
+   "Garage": ["garage", "workshop"],
+   "Garten": ["garden", "yard"],
+   "Gast": "guest",
+   "gearbeitet": ["work", "works", "worked"],
+   "gebaut": ["built", "build", "building"],
+   "geben": ["give", "do give", "are giving"],
+   "geblieben": ["kept", "stayed", "been"],
+   "geboren": "born",
+   "gebrochen": "broken",
+   "Geburtsjahr": "birth year",
+   "Geburtsort": "birthplace",
+   "Geburtstag": "birthday",
+   "Geburtstagskarte": "birthday card",
+   "Geb\u00e4ude": "building",
+   "gecampt": "camped",
+   "gedauert": ["lasted", "last"],
+   "gefahren": ["traveled", "ridden", "gone"],
+   "gefallen": ["like", "fall", "fell"],
+   "geflogen": ["flown", "flew", "blew"],
+   "gefreut": ["excited", "pleased"],
+   "gefunden": ["find", "found", "made"],
+   "gef\u00e4hrlich": "dangerous",
+   "gef\u00e4hrlicher": "more dangerous",
+   "gef\u00e4llt": ["like", "likes", "do like"],
+   "gegangen": ["attended", "left", "go"],
+   "gegeben": ["gave", "produced", "presented"],
+   "gegen": ["for", "around", "about"],
+   "gegen\u00fcber": "across from",
+   "gegessen": ["eaten", "ate", "eat"],
+   "gegrillt": ["grilled", "did grill"],
+   "geh": ["go", "leave"],
+   "gehasst": ["hated", "hate"],
+   "gehe": ["am going", "walking", "go"],
+   "gehen": ["go", "walk", "leave"],
+   "geht": ["is", "work", "walks"],
+   "geht's": ["it's going", "it is going"],
+   "geh\u00f6ren": "belong to",
+   "geh\u00f6rt": ["listened", "hear", "belong to"],
+   "Geige": ["violin", "fiddle"],
+   "gekauft": ["buy", "bought", "by"],
+   "gekocht": ["cooked", "boiled", "cook"],
+   "gekommen": ["moved", "have come", "come"],
+   "gekostet": "cost",
+   "gelacht": ["laughed", "laugh"],
+   "gelb": "yellow",
+   "gelbe": ["yellow", "yellow one"],
+   "gelben": "yellow",
+   "Geld": "money",
+   "Geldautomat": ["ATM", "cash dispenser", "cashpoint"],
+   "Geldautomaten": "ATM",
+   "Geldbeutel": "wallet",
+   "gelesen": ["read", "reading"],
+   "gemacht": ["made", "making", "done"],
+   "gemalt": ["painted", "paint"],
+   "gemein": "mean",
+   "gemocht": ["like", "liked"],
+   "Gem\u00fcse": ["vegetables", "vegetable"],
+   "gem\u00fctlich": "comfortable",
+   "genau": ["exactly", "precisely"],
+   "Genf": "Geneva",
+   "Genfer See": "Lake Geneva",
+   "Genie": "genius",
+   "genug": "enough",
+   "Gep\u00e4ck": "luggage",
+   "gerade": "right now",
+   "geradeaus": "straight ahead",
+   "geregnet": "rained",
+   "gereist": ["traveled", "travel"],
+   "gern": ["like", "liked to", "happy to"],
+   "gern geschehen": "you are welcome",
+   "gesagt": ["said", "tell", "told"],
+   "Geschenk": ["gift", "present"],
+   "Geschenke": ["gifts", "presents"],
+   "Geschichte": "history",
+   "Geschichten": "stories",
+   "geschlafen": ["sleep", "slept", "asleep"],
+   "geschlossen": ["closed", "locked", "shut"],
+   "geschmeckt": ["tasted", "taste"],
+   "geschnarcht": "snored",
+   "geschneit": ["snowed", "did snow"],
+   "geschrieben": ["written", "write", "wrote"],
+   "Geschwister": "siblings",
+   "geschwommen": ["swim", "swam", "swum"],
+   "Gesch\u00e4ft": "store",
+   "Gesch\u00e4fte": ["stores", "businesses", "business"],
+   "gesch\u00e4ftlich": "for business",
+   "Gesch\u00e4ftsfrau": "businesswoman",
+   "Gesch\u00e4ftsmann": "businessman",
+   "gesehen": ["saw", "watched", "see"],
+   "Gespenst": "ghost",
+   "gespielt": ["played", "play", "given"],
+   "gesprochen": ["spoken", "speak", "leave"],
+   "gestern": "yesterday",
+   "gestresst": "stressed",
+   "gesucht": ["looked", "look", "looked for"],
+   "gesund": ["healthy", "fit", "well"],
+   "Gesundheit": "health",
+   "gesungen": ["sang", "singing"],
+   "gesurft": "surfed",
+   "ges\u00fcnder": "healthier",
+   "getanzt": ["danced", "did dance", "dancing"],
+   "getrennt": "separately",
+   "getroffen": ["hit", "met", "meet"],
+   "getrunken": ["been drinking", "drink", "drunk"],
+   "Getr\u00e4nke": "drinks",
+   "gewandert": ["hike", "hiked", "backpacking"],
+   "Gewitter": "thunderstorm",
+   "gewonnen": ["win", "won"],
+   "gewusst": ["known", "know"],
+   "ge\u00e4rgert": "annoyed",
+   "ge\u00f6ffnet": "open",
+   "gibst": ["are giving", "produce", "give"],
+   "gibt": ["is", "makes", "is giving"],
+   "gibt es": ["is", "there are", "is there"],
+   "Giraffe": "giraffe",
+   "Gitarre": "guitar",
+   "Glas": ["glass", "jar"],
+   "glaube": ["believe", "think"],
+   "gleich": "shortly",
+   "Gleis": ["track", "platform"],
+   "Gl\u00e4ser": ["glasses", "glasses of", "jars"],
+   "Gl\u00fcck": "luck",
+   "gl\u00fccklich": "happy",
+   "Gl\u00fchwein": "mulled wine",
+   "Golf": "golf",
+   "Gras": "grass",
+   "grau": ["gray", "grey"],
+   "griechisch": "Greek",
+   "griechische": "Greek",
+   "grillen": "grill",
+   "Grillparty": "barbecue",
+   "gro\u00df": "tall",
+   "gro\u00dfartig": "fabulous",
+   "Gro\u00dfbritannien": "Great Britain",
+   "gro\u00dfe": ["large", "tall", "big"],
+   "Gro\u00dfeltern": "grandparents",
+   "gro\u00dfen": ["large", "tall", "big"],
+   "Gro\u00dfmutter": ["grandmother", "grandma", "nan"],
+   "Gro\u00dfvater": ["grandfather", "granddad", "grandad"],
+   "Gr\u00f6\u00dfe": "size",
+   "gr\u00f6\u00dfer": "bigger",
+   "gr\u00fcn": "green",
+   "gr\u00fcne": "green",
+   "gr\u00fcnen": "green",
+   "Gummib\u00e4rchen": "gummy bears",
+   "Gurke": "cucumber",
+   "Gurken": "cucumbers",
+   "Gurkensalat": "cucumber salad",
+   "gut": "good",
+   "gut gemacht": "well done",
+   "gute Besserung": ["feel better", "get well"],
+   "gute Nacht": "good night",
+   "gute Reise": "have a good trip",
+   "guten Appetit": "enjoy your meal",
+   "guten Tag": "hello",
+   "Gutschein": "gift certificate",
+   "G\u00e4ste": ["visitors", "guests", "guests'"],
+   "G\u00fcrtel": "belt",
+   "ha": "ha",
+   "Haare": "hair",
+   "habe": ["am", "have been", "did"],
+   "haben": ["have", "do have", "have had"],
+   "habt": ["did", "have", "meet"],
+   "halb": "half",
+   "hallo": "hello",
+   "Haltestellen": "stops",
+   "Handball": "Handball",
+   "Handschuhe": "gloves",
+   "Handtuch": "hand towel",
+   "Handy": ["cell phone", "mobile phone", "mobile"],
+   "Handynummer": "cell phone number",
+   "hassen": ["hate", "hates"],
+   "hast": ["have", "are", "were"],
+   "hat": ["has", "was", "is"],
+   "hatte": ["were", "did have", "had"],
+   "hatten": ["were", "did have", "had"],
+   "hattest": ["had", "did have", "did"],
+   "hattet": ["did", "had", "met"],
+   "Hauptfach": "major",
+   "Hauptstadt": "capital",
+   "Haus": ["house", "home"],
+   "Hausarbeit": "chores",
+   "Hausaufgaben": ["homework", "homework assignments"],
+   "Hausnummer": "house number",
+   "Haustiere": "pets",
+   "hei\u00df": "hot",
+   "hei\u00dfe": ["hot", "am called"],
+   "hei\u00dfen": ["hot", "name", "go"],
+   "hei\u00dft": ["is", "name is", "is called"],
+   "helfen": "help",
+   "hell": ["bright", "light"],
+   "Hemd": "shirt",
+   "Herbst": ["fall", "autumn"],
+   "Herd": "stove",
+   "Herr": ["Mr.", "gentleman"],
+   "Herren": "gentlemen",
+   "herrlich": "lovely",
+   "herum": ["around", "over", "round"],
+   "hervorragend": "outstanding",
+   "herzlichen Gl\u00fcckwunsch": "congratulations",
+   "heute": "today",
+   "heute Abend": ["this evening", "tonight"],
+   "heute Morgen": "this morning",
+   "heute Nachmittag": "this afternoon",
+   "heute Nacht": "tonight",
+   "Hexe": "witch",
+   "hier": "here",
+   "hilf": "help",
+   "Hilfe": "help",
+   "hilfreich": "helpful",
+   "hilfst": ["help", "are helping"],
+   "hilft": ["helps", "will help", "is helping"],
+   "Himmel": "sky",
+   "Hin- und R\u00fcckfahrt": ["round-trip ticket", "round trip", "return ticket"],
+   "hinaus": ["out", "outside"],
+   "hinausgehen": "go outside",
+   "hinten": ["in the back", "at the back", "in the rear"],
+   "hinter": "behind",
+   "Hobby": "hobby",
+   "Hobbys": "hobbies",
+   "hoch": ["tall", "high", "up"],
+   "Hochzeit": "wedding",
+   "Hockey": "hockey",
+   "hoffen": ["hope", "hoping", "are hoping"],
+   "hoffentlich": "hopefully",
+   "hole": ["am getting", "will pick up", "pick"],
+   "holen": ["getting", "get", "are picking up"],
+   "holst": ["get", "pick", "bring"],
+   "holt": ["pick up", "gets", "get"],
+   "Honig": "honey",
+   "Horrorfilm": ["horror movie", "horror film"],
+   "Hose": "pants",
+   "Hotel": "hotel",
+   "Hubschrauber": "helicopter",
+   "Hund": "dog",
+   "Hunde": ["dogs", "dogs'"],
+   "Hunden": ["dogs", "dogs'"],
+   "hundert": "one hundred",
+   "Hunger": ["hunger", "hungry"],
+   "hungrig": "hungry",
+   "hurra": ["hooray", "woohoo", "yippie"],
+   "Hut": "hat",
+   "H\u00e4hnchen": "chicken",
+   "H\u00e4nde": "hands",
+   "h\u00e4sslich": ["ugly", "hideous", "unsightly"],
+   "h\u00f6flich": ["polite", "politely"],
+   "h\u00f6her": "taller",
+   "h\u00f6re": ["listening", "to listen to", "hear"],
+   "h\u00f6ren": ["hear", "listen to", "listen"],
+   "h\u00f6rt": ["hears", "hear", "listens to"],
+   "h\u00fcbsch": ["nice", "pretty"],
+   "H\u00fcgel": "hill",
+   "ICE": ["intercity express", "ICE"],
+   "ich": "I",
+   "ie": "ie",
+   "ihm": ["for him", "him", "it"],
+   "ihn": "him",
+   "Ihnen": ["your", "for you", "them"],
+   "ihr": ["she", "her", "to her"],
+   "Ihr": ["she", "your", "her"],
+   "Ihre": ["your", "yours", "Their"],
+   "ihre": ["her", "hers", "theirs"],
+   "ihrem": ["their", "to their", "to her"],
+   "ihren": ["their", "to their", "for their"],
+   "Ihren": ["It", "your", "yours"],
+   "ihrer": ["her", "hers", "their"],
+   "im": ["this", "to the", "in the"],
+   "im Ausland": "abroad",
+   "im Bett": "in bed",
+   "immer": "always",
+   "in": ["in", "with", "inside"],
+   "in den Ferien": "during the break",
+   "in der N\u00e4he": ["close", "nearby", "near"],
+   "in der N\u00e4he von": ["near", "close to", "by"],
+   "in die Bar": "to the bar",
+   "in Eile": "in a hurry",
+   "in Ordnung": ["ok", "alright", "all right"],
+   "Indien": "India",
+   "indische": "Indian",
+   "Informatik": "computer science",
+   "Informationen": "information",
+   "inklusive": "including",
+   "ins": ["this", "to the", "that"],
+   "Insekten": ["insects", "bugs"],
+   "Instrument": "instrument",
+   "intelligent": "intelligent",
+   "interessant": "interesting",
+   "international": ["international", "internationally"],
+   "Internet": "internet",
+   "irgendwo": "somewhere",
+   "Island": "Iceland",
+   "iss": "eat",
+   "isst": ["eats", "is eating", "eating"],
+   "ist": ["is", "there is", "'s"],
+   "italienisch": "Italian",
+   "italienische": "Italian",
+   "ja": "yes",
+   "Jacke": "jacket",
+   "Jahr": "year",
+   "Jahre": ["years", "years'"],
+   "Jahren": ["year", "years"],
+   "Jahrestag": "anniversary",
+   "Januar": "January",
+   "Japan": "Japan",
+   "Jazz": "jazz",
+   "je": ["for each", "per", "once"],
+   "Jeans": ["jeans", "pair of jeans"],
+   "jede": ["any", "all", "each"],
+   "jeden": ["any", "all", "each"],
+   "jeder": "every",
+   "jedes": ["all", "every", "anything"],
+   "jemals": "ever",
+   "jemand": "someone",
+   "jetzt": ["now", "at the moment", "currently"],
+   "Job": "job",
+   "Jobinterview": ["job interview", "interview"],
+   "jogge": ["am jogging", "jog", "jogging"],
+   "joggen": ["to jog", "jogging"],
+   "joggst": ["jog", "are jogging"],
+   "joggt": ["jogs", "is jogging"],
+   "Joghurt": ["yogurt", "yoghurt"],
+   "Juli": "July",
+   "jung": "young",
+   "junge": "young",
+   "Junge": "boy",
+   "jungen": "young",
+   "Jungen": ["boys", "boy"],
+   "Juni": "June",
+   "Kaffee": "coffee",
+   "Kaffeemaschine": "coffee machine",
+   "Kaffeetisch": "coffee table",
+   "Kakao": ["hot chocolate", "cocoa"],
+   "kalt": "cold",
+   "Kamera": "camera",
+   "Kanada": "Canada",
+   "Kanadier": ["Canadians", "Canadian"],
+   "Kanadierin": "Canadian",
+   "Kaninchen": "rabbit",
+   "kann": ["am able to", "know", "can"],
+   "kannst": ["can", "are able to", "could"],
+   "Kantine": "cafeteria",
+   "Kanzlerin": ["chancellor", "the chancellor", "a chancellor"],
+   "kaputt": ["broken", "broken down", "busted"],
+   "Karotte": "carrot",
+   "Karotten": "carrots",
+   "Karte": "ticket",
+   "Karten": ["cards", "tickets", "maps"],
+   "Kartoffeln": "potatoes",
+   "Kartoffelsalat": "potato salad",
+   "Kasse": "cash register",
+   "Kassenzettel": "receipt",
+   "Katze": "cat",
+   "Katzen": ["cats", "cats'"],
+   "kauf": "buy",
+   "kaufen": ["buy", "to get", "to purchase"],
+   "Kaufhaus": ["department store", "store"],
+   "kaufst": ["buy", "are buying", "shop"],
+   "kein": ["any", "no", "not an"],
+   "keine": ["any", "n't", "no"],
+   "keinen": ["any", "not any", "no"],
+   "keinen Hunger": "not hungry",
+   "Kekse": ["cookies", "biscuits"],
+   "Keller": "basement",
+   "Kellner": "waiter",
+   "Kellnerin": ["waitress", "server"],
+   "kennen": ["know", "knew", "meeting"],
+   "kennengelernt": ["have met", "met", "meet"],
+   "kennenlernen": "meet",
+   "Kette": "necklace",
+   "Kilo": ["kilos of", "kilo of", "kilos"],
+   "Kilometer": ["kilometers", "kilometer"],
+   "Kind": ["child", "kid"],
+   "Kinder": ["children", "kids", "kids'"],
+   "Kinderbuch": "children's book",
+   "Kindergarten": "kindergarten",
+   "Kindern": ["children", "kids"],
+   "Kinderzimmer": "kids' room",
+   "Kino": ["movie theater", "cinema", "movie theatre"],
+   "Kinokarten": "movie tickets",
+   "Kiosk": ["kiosk", "corner store", "newsstand"],
+   "Kirche": ["church", "kirk"],
+   "Kirchen": "churches",
+   "klar": "clear",
+   "Klasse": ["class", "grade"],
+   "Klavier": "piano",
+   "Kleid": "dress",
+   "Kleider": "dresses",
+   "Kleidung": "clothes",
+   "klein": "small",
+   "kleine": ["little", "small"],
+   "kleinen": ["little", "short", "small"],
+   "kleiner": ["little", "small", "shorter"],
+   "Kleingeld": "change",
+   "klettern": ["are climbing", "climb", "climbing"],
+   "klug": "smart",
+   "kl\u00fcger": "smarter",
+   "Knoblauch": "garlic",
+   "Kn\u00f6del": "dumplings",
+   "Koch": "cook",
+   "koche": ["am making", "make", "will cook"],
+   "Kochen": ["cooking", "are cooking", "cook"],
+   "kochen": ["cook", "cooking", "are cooking"],
+   "kochst": ["are boiling", "make", "boil"],
+   "kocht": ["make", "cooks", "is cooking"],
+   "Koffer": ["suitcase", "bag"],
+   "Kollege": "colleague",
+   "Kollegen": ["colleague", "coworkers'", "coworker"],
+   "Kollegin": ["colleague", "coworker"],
+   "komisch": "strange",
+   "komm": ["get", "come on", "come"],
+   "komme": ["come", "will come", "am coming"],
+   "kommen": ["arrives", "comes on", "do come"],
+   "Kommode": "dresser",
+   "kommst": ["come", "are coming", "are"],
+   "kommt": ["is", "is coming", "comes"],
+   "Kom\u00f6die": "comedy",
+   "Konditorei": "pastry shop",
+   "konnte": ["able", "able to", "was able to"],
+   "konnten": ["were able to", "knew", "could"],
+   "konntest": ["could", "knew"],
+   "konntet": ["knew", "were able"],
+   "Konto": "account",
+   "Konzert": ["concert", "concerto", "show"],
+   "Konzerte": "concerts",
+   "Konzerten": "concerts",
+   "Kopfh\u00f6rer": "headphones",
+   "Kopfkissen": "pillow",
+   "Kopfschmerzen": ["headache", "headaches"],
+   "kopieren": ["copying", "copy", "are copying"],
+   "korrigieren": ["grade", "correct", "correcting"],
+   "kosten": ["is", "try", "were"],
+   "kostenlos": "free of charge",
+   "kostet": ["is", "does cost", "costs"],
+   "krank": "sick",
+   "Krankenhaus": "hospital",
+   "Krawatte": "tie",
+   "Kreditkarte": "credit card",
+   "Kreuzung": "intersection",
+   "Kuchen": "cake",
+   "Kugelschreiber": ["pen", "biro", "ballpoint pen"],
+   "Kunden": ["clients", "client", "customer"],
+   "Kunst": "art",
+   "Kunstmuseum": "art museum",
+   "Kurse": ["courses", "classes"],
+   "kurz": ["short", "brief"],
+   "k\u00e4lter": "colder",
+   "K\u00e4se": "cheese",
+   "K\u00e4sebrot": "cheese sandwich",
+   "K\u00f6chin": ["a chef", "a cook", "cook"],
+   "k\u00f6nnen": ["are able to", "knew", "can"],
+   "k\u00f6nnt": ["can", "are able to", "know"],
+   "k\u00f6nnten": "could",
+   "k\u00f6nntest": "could",
+   "k\u00f6nntet": "could",
+   "K\u00fcche": "kitchen",
+   "k\u00fchl": "cool",
+   "K\u00fchlschrank": ["refrigerator", "fridge", "fridge freezer"],
+   "K\u00fcnstler": ["an artist", "artists'", "performer"],
+   "L": "large",
+   "lachen": ["laugh", "laughs", "are laughing"],
+   "Lachs": "salmon",
+   "lade": ["invite", "charge", "am charging"],
+   "Ladeger\u00e4t": "charger",
+   "lag": ["lied", "was lying", "lay"],
+   "Lampe": ["lamp", "light"],
+   "Land": "country",
+   "landen": ["land", "are landing"],
+   "Landkarte": "map",
+   "Landschaft": "landscape",
+   "lang": "long",
+   "lange": ["long", "late"],
+   "langsam": "slowly",
+   "langsamer": "slower",
+   "langweilig": ["boring", "dull", "tedious"],
+   "langweiliger": "more boring",
+   "Laptop": "laptop",
+   "lass uns": ["let's", "let us"],
+   "laufe": ["ice skate", "run", "walking"],
+   "laufen": "run",
+   "laut": ["loud", "noisy", "loudly"],
+   "lauter": "louder",
+   "lebe": ["live", "am living"],
+   "leben": ["lived", "living", "are living"],
+   "Lebenslauf": "resume",
+   "Lebensmittel": "groceries",
+   "lebst": ["live", "living"],
+   "lebt": ["live", "is living", "are living"],
+   "lecker": "delicious",
+   "leckerer": ["more delicious", "tasty", "tastier"],
+   "Leder": "leather",
+   "leer": "empty",
+   "leg": ["lay", "put"],
+   "legen": ["lie down", "are laying", "put"],
+   "Lehrer": ["teacher", "instructor", "schoolteacher"],
+   "Lehrerin": ["teacher", "a teacher"],
+   "leicht": ["simply", "easily", "easy"],
+   "leider": ["unfortunately", "sadly", "regrettably"],
+   "leihen": ["are lending", "lend", "borrow"],
+   "leise": ["quiet", "silent"],
+   "leiser": "quieter",
+   "lerne": ["learn", "am meeting", "study"],
+   "lernen": ["learn", "studies", "study"],
+   "lernst": ["learn", "study", "are studying"],
+   "lernt": ["learns", "is studying", "learn"],
+   "lese": ["am reading", "read", "will read"],
+   "Lesen": ["reading", "read"],
+   "lesen": "read",
+   "letzte": ["last", "last one"],
+   "letzten": "last",
+   "letztes": "last",
+   "Leute": "people",
+   "Licht": "light",
+   "lieb": "nice",
+   "liebe": "love",
+   "lieben": ["loves", "love", "loved"],
+   "lieber": ["kind", "prefers", "prefer"],
+   "Lieblingsband": "favorite band",
+   "Lieblingsessen": ["favorite food", "favourite food"],
+   "Lieblingslied": "favorite song",
+   "Lieblingsrestaurant": "favorite restaurant",
+   "Lieblingsteam": "favorite team",
+   "Lieblingstier": "favorite animal",
+   "liebst": "love",
+   "liebt": ["loves", "love"],
+   "Lied": "song",
+   "Lieder": "songs",
+   "Lieferservice": "delivery service",
+   "liegen": ["are lying", "lie", "are"],
+   "liest": ["read", "reading", "does read"],
+   "lila": ["purple", "lilac"],
+   "Limonade": "lemonade",
+   "Linguistik": "linguistics",
+   "links": ["on the left", "left", "to the left"],
+   "Liter": ["liters", "liter", "liters of"],
+   "los": ["be off", "leave", "wrong"],
+   "Luftballons": "balloons",
+   "Lust": ["desire", "in the mood"],
+   "lustig": "funny",
+   "lustige": "funny",
+   "lustigen": "funny",
+   "lustiger": "funnier",
+   "l\u00e4dst": ["are charging", "charge", "invite"],
+   "L\u00e4nder": "countries",
+   "l\u00e4ufst": ["are going", "go", "are running"],
+   "l\u00e4uft": ["is", "walks", "is on"],
+   "L\u00f6we": "lion",
+   "L\u00f6wen": ["lions", "lion"],
+   "l\u00fcgen": ["are lying", "lying", "lie"],
+   "mach": ["make", "do", "take"],
+   "mache": ["am turning", "am making", "work"],
+   "machen": ["go on", "makes", "offered"],
+   "machst": ["work", "are doing", "are taking"],
+   "macht": ["is", "comes to", "is making"],
+   "mag": ["like", "likes", "disliked"],
+   "magst": "like",
+   "Mai": "May",
+   "male": ["paint", "am painting", "draw"],
+   "malen": ["are painting", "paint"],
+   "Mallorca": "Mallorca",
+   "malst": ["are painting", "paint"],
+   "malt": ["is drawing", "paints", "draws"],
+   "Mama": ["mom", "to Mom", "mom's"],
+   "Mamas": "mom's",
+   "man": ["they", "you", "one"],
+   "manchmal": ["sometimes", "at times"],
+   "Mango": "mango",
+   "Mann": ["husband", "man", "guy"],
+   "Mantel": "coat",
+   "Marathon": "Marathon",
+   "Markt": ["market", "marketplace"],
+   "Marktplatz": ["marketplace", "market"],
+   "Marmelade": "jam",
+   "Maschine": ["machine", "engine", "ships"],
+   "Maschinen": ["machines", "engines", "machinery"],
+   "Mathematik": "mathematics",
+   "Maus": "mouse",
+   "Mayo": ["mayo", "mayonnaise"],
+   "Medizin": "medicine",
+   "Meer": "sea",
+   "mehr": ["more", "anymore", "left"],
+   "Mehrfamilienhaus": ["apartment building", "multi-family residence", "residential building"],
+   "Meile": "mile",
+   "Meilen": "miles",
+   "mein": "my",
+   "meine": ["mine", "think", "my"],
+   "meinem": ["my", "to my", "mine"],
+   "meinen": ["mean", "mine", "to my"],
+   "meiner": ["for my", "mine", "to my"],
+   "meistens": "usually",
+   "Mensa": "student cafeteria",
+   "Menschen": "people",
+   "Messer": "knife",
+   "Meter": ["meters", "meter"],
+   "Metzger": "butcher",
+   "Metzgerei": "butcher shop",
+   "mich": ["myself", "me", "I"],
+   "Miete": "rent",
+   "mieten": ["rented", "rents", "are renting"],
+   "mietet": ["rent", "rents"],
+   "Mietwagen": "rental car",
+   "Mikrowelle": ["microwave", "microwave oven"],
+   "Milch": "milk",
+   "Million": "million",
+   "Millionen": ["millions", "million", "millions of"],
+   "Mineralwasser": "mineral water",
+   "Minuten": "minutes",
+   "mir": ["my", "myself", "I"],
+   "mit": "with",
+   "Mitbewohner": ["roommate", "roomie", "flatmate"],
+   "Mitbewohnerin": ["roommate", "roommate's"],
+   "Mitbewohnern": "roommates",
+   "mitbringen": "bring along",
+   "mitgebracht": ["bring", "brought with him", "bring along"],
+   "mitgehen": "go along",
+   "mitgespielt": ["was", "starred"],
+   "Mitglieder": "members",
+   "mitkommen": "come along",
+   "mitspielen": ["played", "be", "sat"],
+   "Mittag": "noon",
+   "Mittagessen": "lunch",
+   "Mitternacht": "midnight",
+   "Mittwoch": "Wednesday",
+   "modern": "modern",
+   "Moment": "moment",
+   "Monat": "month",
+   "Monate": "months",
+   "Monaten": ["months", "month", "months'"],
+   "Mond": "moon",
+   "Montag": "Monday",
+   "montags": "on Mondays",
+   "morgen": "tomorrow",
+   "Morgen": "morning",
+   "morgens": ["in the mornings", "in the morning"],
+   "Moschee": "mosque",
+   "motiviert": "motivated",
+   "Motorrad": ["motorcycle", "motorbike", "bike"],
+   "Motorroller": "scooter",
+   "Museen": "museums",
+   "Museum": "museum",
+   "Musik": "music",
+   "Musiker": ["musician", "musicians", "a musician"],
+   "muss": ["needs to", "has to", "has got to"],
+   "musst": ["have got to", "have to", "need to"],
+   "musste": ["needed to", "did have to", "had"],
+   "mussten": ["needed to", "did have to", "had"],
+   "musstest": ["needed to", "had to"],
+   "musstet": ["did ... have to", "needed"],
+   "Mutter": "mother",
+   "Muttersprache": ["mother tongue", "native language", "first language"],
+   "M\u00e4dchen": "girl",
+   "M\u00e4rz": "March",
+   "M\u00e4use": "mice",
+   "M\u00f6bel": "furniture",
+   "M\u00f6belhaus": "furniture store",
+   "m\u00f6chte": ["would like to", "would like"],
+   "m\u00f6chten": ["would like to", "would like"],
+   "m\u00f6chtest": ["would like to", "like", "would like"],
+   "m\u00f6chtet": ["want", "would like to", "like"],
+   "m\u00f6gen": ["like", "likes", "liked"],
+   "m\u00f6gt": "like",
+   "m\u00fcde": ["tired", "sleepy", "weary"],
+   "M\u00fclleimer": "trash can",
+   "M\u00fcnchen": "Munich",
+   "M\u00fcsli": ["muesli", "cereal", "granola"],
+   "m\u00fcssen": ["have got to", "have to", "need to"],
+   "m\u00fcsst": ["have to", "need to", "have got to"],
+   "nach": ["for", "about", "to"],
+   "nach der Arbeit": "after work",
+   "nach der Schule": ["after school", "after graduation"],
+   "nach Hause": "home",
+   "Nachbar": ["neighbor", "neighbour"],
+   "Nachbarin": ["neighbor", "neighbour"],
+   "Nachbarn": ["neighbor", "neighbors", "neighbors'"],
+   "nachher": "afterwards",
+   "Nachmittag": "afternoon",
+   "Nachmittags": "in the afternoons",
+   "Nachname": "last name",
+   "Nachrichten": "news",
+   "Nacht": "night",
+   "Nachtisch": ["dessert", "sweet"],
+   "nachts": ["at night", "at nighttime"],
+   "Nacken": "neck",
+   "Name": "name",
+   "Namen": ["name", "names"],
+   "nass": "wet",
+   "Natur": "nature",
+   "nat\u00fcrlich": "of course",
+   "neben": "next to",
+   "Nebenfach": "minor",
+   "neblig": ["foggy", "misty"],
+   "Neffe": "nephew",
+   "nehme": ["will have", "participate", "take"],
+   "nein": "no",
+   "nerven": "annoy",
+   "nerv\u00f6s": ["nervous", "on edge", "flustered"],
+   "nett": "nice",
+   "nette": ["kind", "nice"],
+   "netten": ["kind", "nice"],
+   "netter": "nicer",
+   "neu": "new",
+   "neue": "new",
+   "neuen": "new",
+   "neugierig": "curious",
+   "neun": "nine",
+   "neunundneunzig": "ninety-nine",
+   "neunzehn": "nineteen",
+   "neunzehnhundertachtzig": "nineteen hundred eighty",
+   "neunzehnten": "nineteenth",
+   "Neuschwanstein": "Neuschwanstein Castle",
+   "Neuseeland": "New Zealand",
+   "nicht": "not",
+   "nicht einmal": "not even",
+   "nicht wahr": ["shouldn't you", "wasn't she", "shouldn't we"],
+   "Nichte": "niece",
+   "nichts": "nothing",
+   "Nickerchen": "nap",
+   "nie": "never",
+   "niemand": "nobody",
+   "noch": "still",
+   "normal": "normal",
+   "Noten": "grades",
+   "Notizbuch": "notebook",
+   "November": "November",
+   "Nudeln": ["noodles", "pasta"],
+   "null": "zero",
+   "Nummer": "number",
+   "nur": ["only", "just", "merely"],
+   "Nussallergie": "nut allergy",
+   "n\u00e4chste": ["next", "closest"],
+   "n\u00e4chsten": ["next", "closest"],
+   "n\u00e4chstes": "next",
+   "N\u00e4chte": "nights",
+   "ob": ["whether", "if"],
+   "oben": "upstairs",
+   "Obst": "fruit",
+   "Obstsalat": "fruit salad",
+   "oder": "or",
+   "oft": "often",
+   "oh": ["oh", "aw"],
+   "ohne": "without",
+   "Ohrringe": "earrings",
+   "OK": "OK",
+   "Oktober": "October",
+   "Oktoberfest": "Oktoberfest",
+   "Oma": ["grandma", "grandmother", "nan"],
+   "Omelett": "omelet",
+   "Onkel": "uncle",
+   "online": "online",
+   "Opa": ["grandpa", "grandfather", "granddad"],
+   "Oper": "opera",
+   "Orange": "orange",
+   "Orangen": "oranges",
+   "Orangensaft": "orange juice",
+   "ordentlich": "tidy",
+   "packen": ["are packing", "pack", "packing"],
+   "Packung": ["package", "pack", "packet of"],
+   "Packungen": ["packs", "packages"],
+   "Paket": "package",
+   "Pakete": "packages",
+   "Panik": "panic",
+   "Papa": ["dad", "to Dad", "Dad"],
+   "Papas": ["dad's", "dads"],
+   "Park": "park",
+   "parken": ["park", "are parking"],
+   "Parkplatz": "parking space",
+   "Parks": "parks",
+   "Partner": ["partner", "partners", "partner's"],
+   "Partnerin": "partner",
+   "Party": "party",
+   "Pass": "passport",
+   "pass auf": "watch",
+   "passen": ["passed", "fit", "go"],
+   "Passfoto": "passport photo",
+   "passiert": ["happens", "happen", "happened"],
+   "passt": ["fit", "is suitable", "fits"],
+   "Pause": "break",
+   "pensioniert": "retired",
+   "per": ["on", "by", "per"],
+   "perfekt": "perfect",
+   "Person": "person",
+   "Pfeffer": "pepper",
+   "Pferd": "horse",
+   "Pferde": "horses",
+   "Pflanze": "plant",
+   "Pflanzen": "plants",
+   "Picknick": "picnic",
+   "Pilze": "mushrooms",
+   "Pizza": "pizza",
+   "Pizzas": "pizzas",
+   "plane": ["am going to", "planning", "am planning"],
+   "Platz": "space",
+   "plaudern": ["are chatting", "chat", "chatting"],
+   "Pl\u00e4ne": "plans",
+   "Podcasts": "podcasts",
+   "Politik": "politics",
+   "Polizist": ["police officer", "policeman", "a police officer"],
+   "Polnisch": "Polish",
+   "Pommes": ["fries", "french fries", "chips"],
+   "Popcorn": "popcorn",
+   "Popmusik": "pop music",
+   "Post": "post office",
+   "Poster": ["poster", "posters"],
+   "Postkarte": "postcard",
+   "Postleitzahl": "zip code",
+   "Praktikum": ["internship", "traineeship", "practicum"],
+   "praktisch": "practical",
+   "Preis": ["price", "prize"],
+   "pro": "per",
+   "probieren": ["try", "trying", "tried"],
+   "Problem": "problem",
+   "Professor": ["professor", "a professor"],
+   "Professorin": ["professor", "a professor"],
+   "prost": "cheers",
+   "Pr\u00fcfung": "exam",
+   "Pr\u00fcfungen": "exams",
+   "Psychologie": "psychology",
+   "Pullover": ["sweater", "jumper"],
+   "putzen": "clean",
+   "putzt": ["cleans", "is cleaning", "cleaning"],
+   "Puzzle": "puzzle",
+   "Puzzles": "puzzles",
+   "p\u00fcnktlich": "punctual",
+   "Quadratmeter": "square meters",
+   "Radio": "radio",
+   "Radtour": "bike ride",
+   "Ratschlag": "piece of advice",
+   "rauchen": ["to smoke", "smoking"],
+   "rechnen": "do math",
+   "Rechnung": "check",
+   "Rechnungen": "bills",
+   "recht": ["right", "just"],
+   "rechts": ["on the right", "right", "the right"],
+   "rede": ["am talking", "talk", "speak"],
+   "reden": ["are talking", "speak", "talked"],
+   "Regal": ["shelf", "rack", "shelving"],
+   "Regale": "shelves",
+   "regelm\u00e4\u00dfig": "regularly",
+   "Regen": "rain",
+   "Regenschirm": "umbrella",
+   "regnet": ["rains", "is raining"],
+   "reich": ["rich", "wealthy", "affluent"],
+   "Reifen": ["tire", "tires"],
+   "Reifenpanne": "flat tire",
+   "rein": ["purely", "in", "pure"],
+   "reinkommen": "come in",
+   "Reis": "rice",
+   "Reise": "trip",
+   "reisen": ["traveling", "travel", "are going"],
+   "Reisezentrum": ["travel center", "travel centre"],
+   "reiten": ["ride", "riding", "ride horses"],
+   "reparieren": ["repairing", "are repairing", "repair"],
+   "Restaurant": "restaurant",
+   "Restaurants": "restaurants",
+   "Rezeption": ["reception desk", "reception"],
+   "richtig": ["correct", "right", "accurate"],
+   "Riesenrad": "Ferris wheel",
+   "riesig": "huge",
+   "riesige": "huge",
+   "riesigen": ["giant", "huge"],
+   "Rindfleisch": "beef",
+   "Roboter": "robot",
+   "Rockkonzert": "rock concert",
+   "Rollschuhe": "roller skates",
+   "rosa": "pink",
+   "Rosen": "roses",
+   "rot": "red",
+   "rote": "red",
+   "roten": ["red", "red ones"],
+   "Rotwein": "red wine",
+   "Rucksack": ["backpack", "rucksack", "knapsack"],
+   "ruf": "call",
+   "rufen": ["calling", "will call", "sends"],
+   "Rugby": "rugby",
+   "Ruhe": "peace",
+   "ruhig": ["quiet", "peaceful", "still"],
+   "Russisch": "Russian",
+   "Russland": "Russia",
+   "r\u00e4umen": ["are tidying", "clear", "emptying"],
+   "R\u00fccken": "back",
+   "S": "small",
+   "S-bahn": "light rail",
+   "Sachen": ["things", "businesses"],
+   "Saft": "juice",
+   "sag": ["tell", "say"],
+   "sagen": ["offered", "speak", "tell"],
+   "sah": ["saw", "looked", "watched"],
+   "Sakko": ["suit jacket", "jacket", "sport coat"],
+   "Salami": "salami",
+   "Salat": "salad",
+   "Salate": "salads",
+   "Salz": "salt",
+   "salzig": "salty",
+   "Samstag": "Saturday",
+   "Samstagabend": "Saturday evening",
+   "Samstags": "on Saturdays",
+   "Sandalen": "sandals",
+   "Sandwich": "sandwich",
+   "Sandwiches": "sandwiches",
+   "sauber": ["clean", "tidy", "neat"],
+   "sauer": ["sour", "mad"],
+   "Sauerkraut": "sauerkraut",
+   "Sauna": "sauna",
+   "Schach": "chess",
+   "schade": ["harm", "too bad"],
+   "Schafe": "sheep",
+   "Schal": ["scarf", "shawl"],
+   "scharf": ["spicy", "sharp", "hot"],
+   "scharfe": "spicy",
+   "scharfen": "spicy",
+   "Schatz": ["treasure", "sweetheart", "sweetie"],
+   "Schauspieler": "actor",
+   "Schauspielerin": ["actress", "actor"],
+   "scheint": ["seems to be", "appears", "appear"],
+   "schenken": ["gift", "are gifting", "give"],
+   "scheu\u00dflich": ["horrible", "terrible"],
+   "schick": ["stylish", "fashionable", "chic"],
+   "schicken": ["send", "are sending", "sending"],
+   "Schildkr\u00f6te": ["turtle", "tortoise"],
+   "Schinken": "ham",
+   "schlafe": ["sleep", "am asleep", "am sleeping"],
+   "schlafen": "sleep",
+   "Schlafzimmer": "bedroom",
+   "Schlagzeug": "drums",
+   "Schlange": "snake",
+   "schlecht": ["bad", "ill", "poor"],
+   "schlie\u00dft": ["is connecting", "shuts", "shut"],
+   "Schloss": ["castle", "palace", "lock"],
+   "Schluss": ["end", "conclusion", "ending"],
+   "schl\u00e4fst": ["sleep", "sleeping", "are sleeping"],
+   "schl\u00e4ft": ["is sleeping", "sleeping", "sleep"],
+   "Schl\u00fcssel": "key",
+   "schmecken": "taste",
+   "schmutzig": ["dirty", "filthy", "grimy"],
+   "schnarchen": ["snore", "snoring"],
+   "Schnecke": ["snail", "slug"],
+   "Schnee": "snow",
+   "Schneemann": "snowman",
+   "schneit": ["is snowing", "snows"],
+   "schnell": ["quickly", "rapidly"],
+   "schneller": "faster",
+   "Schnitzel": ["schnitzel", "schnitzels"],
+   "Schokolade": "chocolate",
+   "schon": ["already", "yet"],
+   "Schrank": ["closet", "cabinet", "cupboard"],
+   "schrecklich": "awful",
+   "schreiben": ["are taking", "take", "are writing"],
+   "Schreibtisch": "desk",
+   "schreien": ["are shouting", "shout", "cried"],
+   "Schublade": "drawer",
+   "Schuhe": "shoes",
+   "Schule": "school",
+   "schwarz": "black",
+   "schwarze": ["black", "black one"],
+   "Schwarzwald": "Black Forest",
+   "Schweden": "Sweden",
+   "Schwedisch": "Swedish",
+   "Schweinefleisch": "pork",
+   "Schweiz": "Switzerland",
+   "schwer": ["difficult", "hard", "tough"],
+   "Schwester": "sister",
+   "Schwestern": ["sisters", "sisters'"],
+   "schwierig": "difficult",
+   "Schwimmbad": "swimming pool",
+   "schwimme": ["swim", "am swimming", "swimming"],
+   "Schwimmen": ["swimming", "swim", "float"],
+   "schwimmen": ["swim", "to float"],
+   "schwimmst": ["swim", "are floating", "float"],
+   "schwimmt": ["swim", "is swimming", "are floating"],
+   "sch\u00f6n": "beautiful",
+   "Sch\u00fcler": ["students", "pupil", "student"],
+   "Sch\u00fcrze": "apron",
+   "sechs": "six",
+   "sechsunddrei\u00dfig": "thirty-six",
+   "sechzehn": "sixteen",
+   "sechzig": "sixty",
+   "See": "lake",
+   "segeln": ["sail", "are sailing", "sailing"],
+   "sehe": ["am watching", "see", "watch"],
+   "sehen": "see",
+   "sehr": "very",
+   "sei": ["be", "was", "keep"],
+   "seid": ["did", "have", "be"],
+   "seien": ["being", "were", "have"],
+   "Seife": "soap",
+   "sein": ["your", "to be", "be"],
+   "seine": ["your", "her", "his"],
+   "seinem": ["her", "one's", "his"],
+   "seinen": ["with their", "her", "their"],
+   "seiner": ["her", "hers", "him"],
+   "seit": "since",
+   "Sekt": "champagne",
+   "Sekunde": "second",
+   "selten": "rarely",
+   "Semester": ["semester", "semesters"],
+   "Semesterende": "end of the semester",
+   "Senf": "mustard",
+   "September": "September",
+   "Sessel": ["armchair", "reclining chair", "easy chair"],
+   "Shorts": "shorts",
+   "sich": ["her", "your", "hers"],
+   "sicher": "of course",
+   "Sie": ["They", "It", "your"],
+   "sie": "she",
+   "sieben": "seven",
+   "siebenunddrei\u00dfig": "thirty-seven",
+   "siebten": "seventh",
+   "siebzehn": "seventeen",
+   "siebzig": "seventy",
+   "siehst": ["see", "watch", "seeing"],
+   "sieht": ["watching", "see", "watch"],
+   "Silvester": "New Year's Eve",
+   "sind": ["feel", "have", "are"],
+   "singe": ["sing", "am singing"],
+   "singen": ["sing", "singing", "are singing"],
+   "singst": ["sing", "are singing"],
+   "singt": ["sings", "sing", "is singing"],
+   "Sitz": ["seat", "place", "chair"],
+   "sitzen": ["are sitting", "sit"],
+   "Sitzplatz": "seat",
+   "Sitzpl\u00e4tze": ["seats", "seating"],
+   "sitzt": ["is sitting", "sits", "sit"],
+   "Skateboard": "skateboard",
+   "Ski": ["skis", "ski"],
+   "Smartphone": "smartphone",
+   "SMS": ["SMS", "texts", "text"],
+   "Snowboard": "snowboard",
+   "so": ["that", "as", "so"],
+   "Socken": "socks",
+   "Sofa": "sofa",
+   "sofort": ["immediately", "right away", "at once"],
+   "sogar": "even",
+   "Sohn": "son",
+   "sollte": "should",
+   "sollten": "should",
+   "solltest": "should",
+   "solltet": "should",
+   "Sommer": "summer",
+   "Sommerjob": "summer job",
+   "sondern": "but rather",
+   "Sonne": "sun",
+   "Sonnenbrille": "sunglasses",
+   "Sonnencreme": ["sunscreen", "suntan lotion", "sun cream"],
+   "sonnig": "sunny",
+   "Sonntag": "Sunday",
+   "sonntags": "on Sundays",
+   "sonst noch etwas": "anything else",
+   "sorry": "sorry",
+   "So\u00dfe": "sauce",
+   "So\u00dfen": "sauces",
+   "Spa": "spa",
+   "Spanisch": "Spanish",
+   "Spargel": "asparagus",
+   "spazieren": ["for a walk", "walk", "walked"],
+   "spazieren gehen": "go for a walk",
+   "Spaziergang": "walk",
+   "Spa\u00df": "fun",
+   "Speisekarte": "menu",
+   "Speisewagen": ["dining car", "diner car"],
+   "Spiegel": "mirror",
+   "Spiel": ["game", "match", "play"],
+   "Spiele": ["games", "plays", "matches"],
+   "spiele": ["am playing", "play", "playing"],
+   "spielen": ["playing", "are playing", "will play"],
+   "Spielplatz": "playground",
+   "spielst": ["are playing", "playing", "play"],
+   "spielt": ["is", "are playing", "is playing"],
+   "Spielzeug": "toy",
+   "Spielzeuge": "toys",
+   "Spinat": "spinach",
+   "Spinnen": "spiders",
+   "spinnen": "are ridiculous",
+   "spitze": "excellent",
+   "Sport": ["sports", "exercise", "sport"],
+   "Sporthalle": "rec center",
+   "sportlich": "athletic",
+   "Sportverein": "sports club",
+   "Sprachen": "languages",
+   "spreche": ["am talking", "speak", "pronounce"],
+   "sprechen": ["speak", "are speaking"],
+   "sprichst": ["are speaking", "speak", "talk"],
+   "spricht": ["speaks", "does speak", "speak"],
+   "sp\u00e4t": "late",
+   "sp\u00e4ter": ["later", "later on"],
+   "Stadion": "stadium",
+   "Stadt": ["city", "town"],
+   "Stadtmuseum": "city museum",
+   "Stadtplan": "city map",
+   "Stadtviertel": ["neighborhood", "neighborhoods"],
+   "Stadtzentrum": "city center",
+   "stark": ["strong", "hard", "harder"],
+   "Station": "station",
+   "statt": "instead of",
+   "Stau": "traffic",
+   "stehen": ["stand", "are standing", "comes"],
+   "stehst": "stand",
+   "steif": "stiff",
+   "stellen": ["stand", "ask", "put"],
+   "stimmen": ["tune", "are right", "are accurate"],
+   "Stimmung": "atmosphere",
+   "Stock": ["floor", "cane"],
+   "Stollen": "fruit cake",
+   "Stoppschild": "stop sign",
+   "stornieren": "cancel",
+   "Strand": ["beach", "shore"],
+   "Stra\u00dfe": ["street", "road"],
+   "Stra\u00dfen": "streets",
+   "Stra\u00dfenbahn": "streetcar",
+   "Streit": "fight",
+   "streng": "strict",
+   "Stress": ["stress", "stressed"],
+   "stressig": "stressful",
+   "stricken": ["knit", "are knitting"],
+   "Student": ["college student", "university student", "student"],
+   "Studenten": ["students", "student"],
+   "Studentenwohnheim": "student dorm",
+   "Studentin": ["a student", "college student", "student"],
+   "studieren": ["study", "are studying", "have studied"],
+   "Studium": "studies",
+   "Stuhl": "chair",
+   "Stunde": "hour",
+   "Stunden": ["lessons", "hours", "classes"],
+   "st\u00e4rker": "stronger",
+   "St\u00fcck": "piece",
+   "St\u00fchle": "chairs",
+   "suche": ["am looking for", "look for", "seek"],
+   "super": ["super", "great", "fantastic"],
+   "Supermarkt": ["supermarket", "grocery store"],
+   "Suppe": "soup",
+   "Suppen": "soups",
+   "Surfbrett": "surfboard",
+   "surfe": ["surf", "go surfing"],
+   "surfen": ["surf", "surfing"],
+   "surfst": ["surf", "go surfing"],
+   "surft": ["goes surfing", "is surfing", "surfs"],
+   "S\u00f6hne": "sons",
+   "s\u00fc\u00df": ["sweet", "cute"],
+   "s\u00fc\u00dfer": ["sweeter", "sweet", "cute"],
+   "S\u00fc\u00dfigkeiten": "sweets",
+   "T-shirt": "T-shirt",
+   "Tablette": ["pill", "tablet"],
+   "Tag": "day",
+   "Tage": "days",
+   "Tagebuch": "diary",
+   "Tagen": "days",
+   "Tank": "tank",
+   "Tante": ["aunt", "auntie", "aunty"],
+   "tanze": ["dance", "am dancing"],
+   "tanzen": "dance",
+   "tanzt": ["is dancing", "are dancing", "dances"],
+   "Tasche": "bag",
+   "Taschengeld": "pocket money",
+   "Tasse": ["cup", "mug"],
+   "Tassen": ["cups", "mugs"],
+   "tats\u00e4chlich": "in fact",
+   "tausend": ["thousand", "a thousand", "one thousand"],
+   "Taxi": "taxi",
+   "Taxifahrt": ["taxi ride", "cab ride"],
+   "Taxistand": "taxi stand",
+   "Tee": "tea",
+   "teilen": ["share", "splitting", "dividing"],
+   "Teller": ["plates", "plate"],
+   "Temperaturen": "temperatures",
+   "Tennis": "tennis",
+   "Teppich": ["carpet", "rug"],
+   "Termin": ["appointment", "date", "deadline"],
+   "Termine": ["appointments", "dates"],
+   "teuer": ["expensive", "costly", "dear"],
+   "teurer": "more expensive",
+   "Theater": "theater",
+   "Tierarzt": "vet",
+   "Tiere": ["animals", "animals'"],
+   "Tier\u00e4rztin": ["vet", "a vet"],
+   "Tisch": ["table", "desk"],
+   "Tische": "tables",
+   "Toast": "toast",
+   "Tochter": "daughter",
+   "Toilette": "restroom",
+   "Toiletten": ["toilets", "bathrooms", "restrooms"],
+   "toll": ["great", "awesome", "terrific"],
+   "Tomaten": "tomatoes",
+   "Torte": "layer cake",
+   "total": "totally",
+   "Touristen": "tourists",
+   "trage": ["am wearing", "am carrying", "wear"],
+   "tragen": ["hold", "are carrying", "wear"],
+   "trainieren": ["are practicing", "exercises", "train"],
+   "Trauben": "grapes",
+   "Traumberuf": "dream job",
+   "traurig": ["sad", "unhappy"],
+   "treffe": ["am meeting", "meeting", "meet"],
+   "Treffen": "meeting",
+   "treffen": ["are meeting", "join", "meeting"],
+   "Treppe": ["stairs", "steps", "staircase"],
+   "triffst": ["join", "meet", "hit"],
+   "trifft": ["is meeting", "join", "meeting"],
+   "trink": "drink",
+   "trinke": ["drink", "am drinking"],
+   "trinken": "drink",
+   "Trinkgeld": "tip",
+   "trotzdem": ["nevertheless", "still"],
+   "tr\u00e4gst": ["are carrying", "wearing", "wear"],
+   "tr\u00e4gt": ["is wearing", "wears", "is carrying"],
+   "tr\u00f6sten": "comfort",
+   "tsch\u00fcss": "bye",
+   "tun": ["are doing", "make", "do"],
+   "Turnschuhe": "gym shoes",
+   "tut": ["do", "does", "is"],
+   "Typ": "guy",
+   "t\u00e4glich": "daily",
+   "T\u00f6chter": ["daughters", "daughters'"],
+   "T\u00fcr": ["door", "doorway"],
+   "T\u00fcrkei": "Turkey",
+   "T\u00fcrkisch": "Turkish",
+   "T\u00fcte": "bag",
+   "T\u00fcten": "bags",
+   "U-bahn": "subway",
+   "U-Bahnstation": "subway station",
+   "Ufo": "UFO",
+   "Uhr": ["watch", "clock", "o'clock"],
+   "um": ["for", "to", "of"],
+   "Umkleidekabinen": "dressing rooms",
+   "Umwelt": "environment",
+   "umziehen": "move",
+   "Umzug": "move",
+   "und": "and",
+   "Ungeheuer": "monster",
+   "ungew\u00f6hnlich": "unusual",
+   "ungl\u00fccklich": "unhappy",
+   "unh\u00f6flich": "rude",
+   "Universit\u00e4t": ["university", "uni", "college"],
+   "unordentlich": "messy",
+   "uns": "us",
+   "unser": "our",
+   "unsere": ["our", "ours"],
+   "unserem": ["to our", "of us", "ourselves"],
+   "unseren": "our",
+   "unserer": ["our", "ours", "to our"],
+   "unten": "downstairs",
+   "unter": "under",
+   "unterschreiben": "sign",
+   "Urlaub": ["vacation", "a vacation", "holidays"],
+   "Vase": "vase",
+   "Vater": "father",
+   "Vatertag": "Father's Day",
+   "Ventilator": "fan",
+   "verboten": ["prohibited", "forbidden", "not allowed"],
+   "verbringen": ["are spending", "pass", "spend"],
+   "verdienen": ["makes", "earn", "made"],
+   "vergessen": ["forgotten", "left", "forget"],
+   "vergiss": "forget",
+   "verheiratet": "married",
+   "verlassen": ["left", "are leaving", "leave"],
+   "verliebt": "in love",
+   "verlieren": ["dropped", "lose", "drop"],
+   "verloren": "lost",
+   "verl\u00e4ngern": ["renew", "keep", "keeps"],
+   "verl\u00e4sst": ["leave", "is leaving", "leaves"],
+   "verreist": "out of town",
+   "Versp\u00e4tung": "delay",
+   "verstehen": ["understood", "understand", "caught"],
+   "Verwandten": "relatives",
+   "ver\u00e4rgert": "angry",
+   "Videos": "videos",
+   "Videospiele": "video games",
+   "viel": "much",
+   "viele": ["many", "a lot of", "lots of"],
+   "vielen": ["many", "a lot of"],
+   "vielen Dank": "thank you very much",
+   "vielleicht": ["maybe", "perhaps"],
+   "vier": "four",
+   "Viertel": "quarter",
+   "Viertelstunde": "quarter of an hour",
+   "vierten": ["fourth", "4th"],
+   "vierzehn": ["fourteen", "14"],
+   "vierzig": "forty",
+   "Visum": "visa",
+   "Vogel": "bird",
+   "voll": "full",
+   "Volleyball": "volleyball",
+   "Vollzeit": "full-time",
+   "vom": ["off", "the", "from the"],
+   "von": ["from", "'s", "on"],
+   "vor": ["to", "in front of", "of"],
+   "vorbei": "over",
+   "vorgestern": "the day before yesterday",
+   "Vorhang": "curtain",
+   "vorher": ["beforehand", "previously", "before"],
+   "Vorh\u00e4nge": "curtains",
+   "Vorlesung": "lecture",
+   "Vorname": "first name",
+   "vorne": "in the front",
+   "vorsichtig": "careful",
+   "Vorteile": ["advantages", "benefits", "pros"],
+   "V\u00f6gel": ["birds", "birds'"],
+   "V\u00f6geln": "birds",
+   "wahrscheinlich": "probably",
+   "Wald": ["forest", "wood", "woods"],
+   "Wand": "wall",
+   "wandere": ["am hiking", "go hiking", "hike"],
+   "wandern": ["traveling", "hiking", "hike"],
+   "wanderst": ["hiking", "hike", "go hiking"],
+   "wandert": ["hike", "hikes", "hiking"],
+   "wann": ["when", "what time", "at what time"],
+   "war": ["has been", "was", "there was"],
+   "waren": ["have been", "were", "had"],
+   "warm": "warm",
+   "warst": ["were", "had", "went"],
+   "warten": ["have been", "are waiting", "hold on"],
+   "Wartezimmer": "waiting room",
+   "warum": "why",
+   "was": "what",
+   "was f\u00fcr": "what kind of",
+   "was gibt's Neues": "what's new",
+   "waschen": "wash",
+   "Wasser": "water",
+   "Wasserflasche": "water bottle",
+   "Wasserkocher": "electric kettle",
+   "Wassermelone": "watermelon",
+   "wechseln": ["changed", "are changing", "change"],
+   "wecken": "wake up",
+   "Wecker": "alarm",
+   "weg": ["away", "missing", "gone"],
+   "weh": ["hurt", "painful", "sore"],
+   "weich": ["soft", "squishy"],
+   "Weihnachten": "Christmas",
+   "weil": "because",
+   "Wein": "wine",
+   "weinen": ["crying", "are crying", "cry"],
+   "weit weg": ["far away", "far"],
+   "wei\u00df": "white",
+   "Wei\u00dfbier": "wheat beer",
+   "wei\u00dft": "know",
+   "Wei\u00dfwein": "white wine",
+   "welche": "which",
+   "welchem": ["which", "what"],
+   "welchen": ["which", "what"],
+   "welcher": ["which", "some"],
+   "welches": "which",
+   "Welt": "world",
+   "wem": ["whom", "who", "anybody"],
+   "wen": ["whom", "who", "to whom"],
+   "wenig": "a little",
+   "weniger": ["less", "fewer"],
+   "wenn": ["when", "if"],
+   "wer": "who",
+   "werde": ["will", "am going to", "going"],
+   "werden": ["are going to", "is", "become"],
+   "wessen": "whose",
+   "Wetter": "weather",
+   "wichtig": "important",
+   "wie": ["as", "such", "like"],
+   "wie geht's": "how are you?",
+   "wie lange": "how long",
+   "wie oft": "how often",
+   "wie viel Uhr": "what time",
+   "wieder": ["again", "back"],
+   "wiederholen": "repeat",
+   "wiederkommen": "come back",
+   "Wien": "Vienna",
+   "Wiese": "field",
+   "Wiesn-Herz": "heart cookie",
+   "will": ["wants", "wants to", "want"],
+   "willkommen": "welcome",
+   "willst": ["want", "want to"],
+   "windig": "windy",
+   "Winter": ["winters", "winter"],
+   "Winterstiefel": "winter boots",
+   "wir": "we",
+   "wird": ["comes", "is", "are"],
+   "wirklich": ["really", "actually", "truly"],
+   "wirst": ["are going to", "become", "grow"],
+   "wissen": ["know", "do know", "knew"],
+   "Witz": "joke",
+   "Witze": "jokes",
+   "wo": "where",
+   "Woche": "week",
+   "Wochen": "weeks",
+   "Wochenende": "weekend",
+   "woher": ["where", "from", "where from"],
+   "wohin": ["where to", "where"],
+   "wohnen": ["live", "lived", "are living"],
+   "Wohnung": ["apartment", "flat"],
+   "Wohnungen": "apartments",
+   "Wohnzimmer": ["living room", "lounge", "sitting room"],
+   "wollen": ["want", "want to", "won't"],
+   "wollt": ["want", "wish", "will"],
+   "Wort": "word",
+   "wor\u00fcber": ["what", "what about", "about"],
+   "wunderbar": ["wonderful", "splendid", "excellent"],
+   "wundersch\u00f6n": "lovely",
+   "Wurst": "sausage",
+   "w\u00e4rmer": ["hot", "warm", "warmer"],
+   "w\u00e4scht": ["is washing", "wash", "are washing"],
+   "w\u00f6chentlich": "weekly",
+   "W\u00f6rter": "words",
+   "W\u00f6rterbuch": ["dictionary", "wordbook"],
+   "W\u00fcrstchen": "sausage",
+   "Yoga": "yoga",
+   "Yogamatte": "yoga mat",
+   "zahl": "pay",
+   "zahlen": ["pay", "to pay", "are paying"],
+   "Zahnarzt": "dentist",
+   "Zahnschmerzen": "toothache",
+   "Zahn\u00e4rztin": "dentist",
+   "zehn": "ten",
+   "zehnten": "tenth",
+   "Zeichentrickfilme": "cartoons",
+   "zeichnen": ["draw", "drawing"],
+   "Zeichnung": "drawing",
+   "zeigen": ["show", "shows", "are showing"],
+   "Zeit": "time",
+   "Zeitschrift": "magazine",
+   "Zeitschriften": "magazines",
+   "Zeitung": "newspaper",
+   "Zeitungen": "newspapers",
+   "Zelt": "tent",
+   "Zeugnis": "report card",
+   "ziehen": ["grow", "pull", "grows"],
+   "ziemlich": "fairly",
+   "Zimmer": "room",
+   "Zirkus": "circus",
+   "Zitrone": "lemon",
+   "Zoll": ["customs", "customs office"],
+   "Zoo": "zoo",
+   "zu": ["with", "for", "too"],
+   "zu Fu\u00df": ["by foot", "on foot"],
+   "zu Hause": ["at home", "home"],
+   "zu Weihnachten": "for Christmas",
+   "Zucker": "sugar",
+   "zuerst": "first",
+   "zufrieden": ["content", "satisfied", "pleased"],
+   "Zug": "train",
+   "zugemacht": ["closed down", "shut", "closed"],
+   "Zugt\u00fcr": "train door",
+   "zuh\u00f6ren": ["listened", "(to) listen", "(to) listen to"],
+   "zuletzt": "last",
+   "zum": ["with the", "to the", "with"],
+   "zum Abendessen": ["to dinner", "for dinner"],
+   "zum Fr\u00fchst\u00fcck": "for breakfast",
+   "zum Mittagessen": "for lunch",
+   "zum Oktoberfest": "to Oktoberfest",
+   "zum Schalter": "to counter",
+   "zum Strand": "to the beach",
+   "zumachen": "close",
+   "zur": ["on", "with the", "to the"],
+   "zurzeit": ["currently", "at the moment"],
+   "zusammen": "together",
+   "zustimmen": "agree with",
+   "zwanzig": ["twenty", "20"],
+   "zwanzigsten": "twentieth",
+   "zwei": "two",
+   "zweihundert": "two hundred",
+   "zweimal": "twice",
+   "zweitausend": "two thousand",
+   "zweiten": ["second", "2nd"],
+   "zweiundzwanzig": "twenty-two",
+   "Zwiebeln": "onions",
+   "zw\u00f6lf": "twelve",
+   "zw\u00f6lften": "twelfth",
+   "Z\u00e4hne": "teeth",
+   "Z\u00fcrich": "Zurich",
+   "\u00c4gypten": "Egypt",
+   "\u00c4pfel": "apples",
+   "\u00e4rgern": ["anger", "are annoyed", "annoy"],
+   "\u00c4rztin": ["doctor", "a doctor"],
+   "\u00f6ffnen": ["open", "open up", "opening"],
+   "\u00f6fter": "more often",
+   "\u00d6l": "oil",
+   "\u00d6sterreich": "Austria",
+   "\u00fcben": ["are practicing", "practice", "practicing"],
+   "\u00fcber": ["over", "at", "on"],
+   "\u00fcberall": "everywhere",
+   "\u00fcbermorgen": "the day after tomorrow",
+   "\u00fcberqueren": ["cross", "crosses"],
+   "\u00fcberrascht": "surprised",
+   "\u00dcberraschung": "surprise",
+   "\u00fcberweisen": "transfer"
 };
 
-export default dictionary;
+export default  dictionary;

@@ -116,3 +116,21 @@
         border-width: 0.0625rem; /* Thinner border for very small words */
     }
 }
+
+/* Add this new class to your WordColumn CSS file */
+
+.word.matched {
+  background-color: #d4edda; /* Light green */
+  border-color: #c3e6cb;
+  color: #155724; /* Dark green */
+  cursor: not-allowed;
+  opacity: 0.8;
+  transform: none !important; /* Override hover effects */
+  box-shadow: none !important;
+}
+
+/* Ensure it overrides the selected state visually if needed */
+.word.matched.selected {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
