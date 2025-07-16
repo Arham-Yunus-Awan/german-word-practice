@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/german-word-practice/static/css/main.38150f89.css",
-    "main.js": "/german-word-practice/static/js/main.f5d5f91f.js",
+    "main.css": "/german-word-practice/static/css/main.02a4600c.css",
+    "main.js": "/german-word-practice/static/js/main.e8beeae5.js",
     "index.html": "/german-word-practice/index.html",
-    "main.38150f89.css.map": "/german-word-practice/static/css/main.38150f89.css.map",
-    "main.f5d5f91f.js.map": "/german-word-practice/static/js/main.f5d5f91f.js.map"
+    "main.02a4600c.css.map": "/german-word-practice/static/css/main.02a4600c.css.map",
+    "main.e8beeae5.js.map": "/german-word-practice/static/js/main.e8beeae5.js.map"
   },
   "entrypoints": [
-    "static/css/main.38150f89.css",
-    "static/js/main.f5d5f91f.js"
+    "static/css/main.02a4600c.css",
+    "static/js/main.e8beeae5.js"
   ]
 }
