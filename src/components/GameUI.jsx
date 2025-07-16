@@ -1,3 +1,4 @@
+// src/components/GameUI.jsx
 import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import dictionary from '../data/words';
@@ -13,8 +14,8 @@ const PAIR_COUNT = 5;
 const REPLACE_APPEAR_DELAY = 400;
 const INCORRECT_MATCH_RESET_DELAY = 1500;
 const INITIAL_GAME_TIME = 60;
-const FEEDBACK_MESSAGE_DURATION = 1600;
-const FEEDBACK_ANIMATION_DURATION = 400;
+const FEEDBACK_MESSAGE_DURATION = 1600; // How long a temporary message lasts
+const DEFAULT_FEEDBACK_MESSAGE = "Select a German and an English word to match."; // The default prompt
 
 const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetScore }) => {
   // --- State & Refs ---
@@ -27,8 +28,9 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
   const [time, setTime] = useState(INITIAL_GAME_TIME);
   const [gameOver, setGameOver] = useState(false);
   const [permanentlyMatched, setPermanentlyMatched] = useState([]);
-  const [feedback, setFeedback] = useState({ message: '', type: '' });
-  const [isFeedbackVisible, setIsFeedbackVisible] = useState(false);
+  // Initialize feedback state with the default message and type
+  const [feedback, setFeedback] = useState({ message: DEFAULT_FEEDBACK_MESSAGE, type: 'default' });
+  // The isFeedbackVisible state is no longer needed
   const timerRef = useRef(null);
   const feedbackTimeoutRef = useRef(null);
   const hasInitialized = useRef(false);
@@ -48,24 +50,29 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
     setTime(INITIAL_GAME_TIME);
     setIsRunning(true);
     setGameOver(false);
-    setFeedback({ message: '', type: '' });
-    setIsFeedbackVisible(false);
+    // Set the feedback to the default message on every reset
+    setFeedback({ message: DEFAULT_FEEDBACK_MESSAGE, type: 'default' });
     if (feedbackTimeoutRef.current) clearTimeout(feedbackTimeoutRef.current);
     if (timerRef.current) clearInterval(timerRef.current);
   }, [onResetScore]);
 
-  // --- Feedback Helper ---
+  // --- Feedback Helper (Updated) ---
   const showFeedback = (message, type) => {
-    if (feedbackTimeoutRef.current) clearTimeout(feedbackTimeoutRef.current);
+    // Clear any previous timeout to ensure the new message shows for its full duration
+    if (feedbackTimeoutRef.current) {
+      clearTimeout(feedbackTimeoutRef.current);
+    }
+    
+    // Set the new temporary feedback message (e.g., "Correct!")
     setFeedback({ message, type });
-    setIsFeedbackVisible(true);
+
+    // Set a timeout to revert the message back to the default prompt
     feedbackTimeoutRef.current = setTimeout(() => {
-      setIsFeedbackVisible(false);
-      setTimeout(() => setFeedback({ message: '', type: '' }), FEEDBACK_ANIMATION_DURATION);
+      setFeedback({ message: DEFAULT_FEEDBACK_MESSAGE, type: 'default' });
     }, FEEDBACK_MESSAGE_DURATION);
   };
 
-  // --- Core Game Logic ---
+  // --- Core Game Logic (No changes needed inside here) ---
   const handleCardClick = (word, language) => {
     if (language === 'german') {
       speak(word, 'de-DE');
@@ -80,7 +87,6 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
       const matchedPair = currentPairs.find(p => p.de === newSelection.german && (Array.isArray(p.originalEn) ? p.originalEn.includes(newSelection.english) : p.en === newSelection.english));
 
       if (matchedPair) {
-        // --- CORRECT MATCH ---
         showFeedback('Correct!', 'correct');
         onIncrementScore();
         setBoardMatches(prev => prev + 1);
@@ -97,25 +103,18 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
           setPermanentlyMatched(prev => [...prev, matchedPair.de, matchedPair.en]);
         }
       } else {
-        // --- INCORRECT MATCH ---
-        // 1. Check if the game mode is 'clearTheBoard'
         if (gameMode === 'clearTheBoard') {
-          // 2. Show a specific feedback message
           showFeedback('Incorrect! Your score has been reset.', 'incorrect');
-          // 3. Call the parent function to reset the score to 0
           onResetScore();
         } else {
-          // For Time Attack mode, just show a simple "Incorrect!"
           showFeedback('Incorrect!', 'incorrect');
         }
-        
-        // 4. Clear the user's selection so they can try again
         setSelectedCards({ german: null, english: null });
       }
     }
   };
 
-  // --- Effects ---
+  // --- Effects (No changes needed here) ---
   useEffect(() => {
     if (!hasInitialized.current) {
       initializeGame(true);
@@ -151,13 +150,11 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
   }, [boardMatches, gameMode, initializeGame]);
 
   return (
-    // Return a fragment instead of a div with class "app"
     <> 
       <div className="app-header">
         <button onClick={onGoHome} className="home-button">← Go Home</button>
         <h1>{gameMode === 'timeAttack' ? 'Time Attack' : 'Clear the Board'}</h1>
       </div>
-
       
       {gameMode === 'timeAttack' && <Timer time={time} isRunning={isRunning} />}
       
@@ -169,7 +166,8 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
         gameMode={gameMode}
       />
 
-      <FeedbackMessage message={feedback.message} type={feedback.type} isVisible={isFeedbackVisible} />
+      {/* The isVisible prop is no longer passed down */}
+      <FeedbackMessage message={feedback.message} type={feedback.type} />
       
       <div className="words-container">
         <WordColumn words={germanWords} language="german" onCardClick={handleCardClick} selectedCards={selectedCards} permanentlyMatched={permanentlyMatched} disabled={!isRunning || gameOver} wordsBeingReplaced={[]} />
