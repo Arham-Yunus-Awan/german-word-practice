@@ -3,11 +3,14 @@
 .feedback-message {
   /* --- Layout and Spacing --- */
   padding: 0.75rem;
-  margin: 0 auto 1.5rem; /* Center it and give it space below */
+  margin: 0 auto 1.5rem;
   border-radius: 8px;
   width: 100%;
-  max-width: 450px; /* Ensure it doesn't get too wide on large screens */
-  min-height: 1.2rem; /* Give it a minimum height to prevent collapsing */
+  max-width: 450px;
+  min-height: 1.2rem;
+  
+  /* --- ADD THIS LINE --- */
+  box-sizing: border-box; /* This is the fix */
   
   /* --- Font and Text --- */
   font-weight: bold;
@@ -15,16 +18,53 @@
   
   /* --- Appearance --- */
   box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transitions */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* --- Different Message Types --- */
 
 /* Default state (e.g., "Select a word...") */
+/* src/styles/FeedbackMessage.css */
+
+.feedback-message {
+  /* ... (all your existing styles are correct) ... */
+  padding: 0.75rem;
+  margin: 0 auto 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 450px;
+  min-height: 1.2rem;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 0.95rem;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- ADD THIS RULE --- */
+/* Default state (e.g., "Select a word...") */
 .feedback-message.default {
   background-color: #e9ecef; /* A neutral, light grey */
   color: #495057; /* A darker grey for text */
+  border: 1px solid #dee2e6;
 }
+/* --- END OF ADDITION --- */
+
+
+/* Correct state */
+.feedback-message.correct {
+  background-color: #d4edda; /* Light green */
+  color: #155724; /* Dark green */
+  border: 1px solid #c3e6cb;
+}
+
+/* Incorrect state */
+.feedback-message.incorrect {
+  background-color: #f8d7da; /* Light red */
+  color: #721c24; /* Dark red */
+  border: 1px solid #f5c6cb;
+}
+
 
 /* Correct state */
 .feedback-message.correct {

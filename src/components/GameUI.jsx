@@ -14,8 +14,9 @@ const PAIR_COUNT = 5;
 const REPLACE_APPEAR_DELAY = 400;
 const INCORRECT_MATCH_RESET_DELAY = 1500;
 const INITIAL_GAME_TIME = 60;
-const FEEDBACK_MESSAGE_DURATION = 1600; // How long a temporary message lasts
-const DEFAULT_FEEDBACK_MESSAGE = "Select a German and an English word to match."; // The default prompt
+const FEEDBACK_MESSAGE_DURATION = 1600;
+const DEFAULT_FEEDBACK_MESSAGE = "Select a German and an English word to match.";
+const BONUS_POINTS = 3;
 
 const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetScore }) => {
   // --- State & Refs ---
@@ -28,18 +29,22 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
   const [time, setTime] = useState(INITIAL_GAME_TIME);
   const [gameOver, setGameOver] = useState(false);
   const [permanentlyMatched, setPermanentlyMatched] = useState([]);
-  // Initialize feedback state with the default message and type
   const [feedback, setFeedback] = useState({ message: DEFAULT_FEEDBACK_MESSAGE, type: 'default' });
-  // The isFeedbackVisible state is no longer needed
+  const [showBonus, setShowBonus] = useState(false);
+  const [mistakeMadeOnBoard, setMistakeMadeOnBoard] = useState(false);
+
   const timerRef = useRef(null);
   const feedbackTimeoutRef = useRef(null);
   const hasInitialized = useRef(false);
+  const isBoardClearing = useRef(false); // Prevents board clear effect from looping
 
   // --- Game Initialization ---
   const initializeGame = useCallback((isHardReset = false) => {
     if (isHardReset) {
       onResetScore();
     }
+    isBoardClearing.current = false; // Reset the flag on new board
+    
     const { germanWords: initialGermanWords, englishWords: initialEnglishWords, pairs: initialPairs } = getRandomWords(dictionary, PAIR_COUNT);
     setGermanWords(initialGermanWords);
     setEnglishWords(initialEnglishWords);
@@ -50,29 +55,24 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
     setTime(INITIAL_GAME_TIME);
     setIsRunning(true);
     setGameOver(false);
-    // Set the feedback to the default message on every reset
     setFeedback({ message: DEFAULT_FEEDBACK_MESSAGE, type: 'default' });
+    setMistakeMadeOnBoard(false);
     if (feedbackTimeoutRef.current) clearTimeout(feedbackTimeoutRef.current);
     if (timerRef.current) clearInterval(timerRef.current);
   }, [onResetScore]);
 
-  // --- Feedback Helper (Updated) ---
+  // --- Feedback Helper ---
   const showFeedback = (message, type) => {
-    // Clear any previous timeout to ensure the new message shows for its full duration
     if (feedbackTimeoutRef.current) {
       clearTimeout(feedbackTimeoutRef.current);
     }
-    
-    // Set the new temporary feedback message (e.g., "Correct!")
     setFeedback({ message, type });
-
-    // Set a timeout to revert the message back to the default prompt
     feedbackTimeoutRef.current = setTimeout(() => {
       setFeedback({ message: DEFAULT_FEEDBACK_MESSAGE, type: 'default' });
     }, FEEDBACK_MESSAGE_DURATION);
   };
 
-  // --- Core Game Logic (No changes needed inside here) ---
+  // --- Core Game Logic ---
   const handleCardClick = (word, language) => {
     if (language === 'german') {
       speak(word, 'de-DE');
@@ -106,6 +106,7 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
         if (gameMode === 'clearTheBoard') {
           showFeedback('Incorrect! Your score has been reset.', 'incorrect');
           onResetScore();
+          setMistakeMadeOnBoard(true);
         } else {
           showFeedback('Incorrect!', 'incorrect');
         }
@@ -114,7 +115,7 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
     }
   };
 
-  // --- Effects (No changes needed here) ---
+  // --- Effects ---
   useEffect(() => {
     if (!hasInitialized.current) {
       initializeGame(true);
@@ -141,13 +142,27 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
     return () => clearInterval(timerRef.current);
   }, [isRunning, gameOver, gameMode]);
 
+  // Board Cleared Effect (Corrected to prevent infinite loops)
   useEffect(() => {
-    if (gameMode === 'clearTheBoard' && boardMatches > 0 && boardMatches === PAIR_COUNT) {
-      showFeedback('Board Cleared!', 'correct');
+    if (gameMode === 'clearTheBoard' && boardMatches === PAIR_COUNT && !isBoardClearing.current) {
+      isBoardClearing.current = true; // Set flag immediately to prevent re-entry
+      
       setIsRunning(false);
+
+      if (!mistakeMadeOnBoard) {
+        showFeedback(`Flawless Board! +${BONUS_POINTS} Bonus!`, 'correct');
+        for (let i = 0; i < BONUS_POINTS; i++) {
+          onIncrementScore();
+        }
+        setShowBonus(true);
+        setTimeout(() => setShowBonus(false), 1500);
+      } else {
+        showFeedback('Board Cleared!', 'correct');
+      }
+
       setTimeout(() => initializeGame(false), INCORRECT_MATCH_RESET_DELAY);
     }
-  }, [boardMatches, gameMode, initializeGame]);
+  }, [boardMatches, gameMode, initializeGame, onIncrementScore, mistakeMadeOnBoard]);
 
   return (
     <> 
@@ -166,7 +181,6 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
         gameMode={gameMode}
       />
 
-      {/* The isVisible prop is no longer passed down */}
       <FeedbackMessage message={feedback.message} type={feedback.type} />
       
       <div className="words-container">
@@ -175,6 +189,7 @@ const GameUI = ({ gameMode, onGoHome, sessionScore, onIncrementScore, onResetSco
       </div>
       
       <div className="game-info">
+        {showBonus && <div className="bonus-points">+{BONUS_POINTS}</div>}
         <p>Total Score: {sessionScore}</p>
       </div>
     </>
